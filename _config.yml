@@ -1,7 +1,0 @@
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - pv/2019-01-09_seance_0.md.md
