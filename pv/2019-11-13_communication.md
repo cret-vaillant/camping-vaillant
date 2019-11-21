@@ -22,7 +22,7 @@ Capsules vidéo:
 * Nouilles chinoises
 * Allumer du feu avec le bâton de cervelas 
 
-## Date
+## Date
 
 3 décembre 2019 à 18h30 à Cortaillod (toast prod)
 
@@ -61,9 +61,9 @@ A prendre:
 * Firsbee
 * Lanterne pertrole
 
-# Autre
+# Autre
 
-## Patronne
+## Patronne de la Fleur de Lis
 
 * Annoncer la fête en expliquant le principe
 * Toilettes handicapés (utilisation de celles de l'hôtel)
