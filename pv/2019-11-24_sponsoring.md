@@ -19,7 +19,7 @@ Xavier: Il faut demander à Décathlon le plus tôt possible pour le matériel.
 * S'informer Loterie Romande, Viteos...
 * Lettre Décathlon
 
-On prépare tout et ensuite on va voir Corinne.
+On prépare tout et ensuite on va voir Corine.
 
 Pour le 14 décembre, AG du Crêt-Vaillant, il faudra demander les trucs nécessaires dans la demande de la LORO (exmple vérification des comptes).
 
