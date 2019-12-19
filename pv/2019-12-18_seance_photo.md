@@ -16,13 +16,15 @@ Présences: Domingos, Léo, Etienne, Julien, Joaquim
 
 ## Todo
 
-* [ ] Julien nous envoie les rushs
+* [x] Julien nous envoie les photos
+* [ ] Julien nous envoie les vidéos
 * [ ] Joaquim et Etienne font une sélection de 4 ou 5 photos et une dizaine de vidéo
 * [ ] Julien étalonne les images sélectionnées
 * Joaquim:
     * [ ] Propose 3 à 5 variantes d'affiches
     * [ ] Mise en page flyer
     * [ ] Header + profil pic Facebook
+    * [ ] Site internet
     * [ ] Montage capsules vidéo (vertical pour stories instagram et facebook et horizontal ou carré pour posts facebook):
         * [ ] Selfie stick
         * [ ] Pétanque
