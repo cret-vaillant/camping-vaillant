@@ -24,7 +24,7 @@ Présences: Domingos, Léo, Etienne, Julien, Joaquim
     * [ ] Propose 3 à 5 variantes d'affiches
     * [ ] Mise en page flyer
     * [ ] Header + profil pic Facebook
-    * [ ] Site internet
+    * [ ] Site internet
     * [ ] Montage capsules vidéo (vertical pour stories instagram et facebook et horizontal ou carré pour posts facebook):
         * [ ] Selfie stick
         * [ ] Pétanque
