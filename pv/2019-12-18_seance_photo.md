@@ -18,7 +18,7 @@ Présences: Domingos, Léo, Etienne, Julien, Joaquim
 
 * [x] Julien nous envoie les photos
 * [ ] Julien nous envoie les vidéos
-* [ ] Joaquim et Etienne font une sélection de 4 ou 5 photos et une dizaine de vidéo
+* [x] Joaquim et Etienne font une sélection de 4 ou 5 photos et une dizaine de vidéo
 * [ ] Julien étalonne les images sélectionnées
 * Joaquim:
     * [ ] Propose 3 à 5 variantes d'affiches
