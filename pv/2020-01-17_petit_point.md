@@ -20,8 +20,7 @@ Joaquim: Je m'occupe de finir le dossier.
 
 Problème: pour affiche et flyers, il nous faut les noms des plus gros sponsors, mais on les aura pas encore...
 
-- [ ] Mettre un disclaimer dans les contreparties qui dit qu'il faut répondra avant une certaine date butoire.
-- [ ] Mettre un autre disclaimer dans le dernier palier de don qui dit qu'on se réserve le droit de passer le don en 300 CHF (avec remboursement) si 
+- [x] Mettre un disclaimer dans les contreparties qui dit qu'il faut répondre avant une certaine date butoire.
 
 On dit: fin février dernier délai pour la réponse s'ils veulent apparaître sur l'affiche/le flyer.
 
