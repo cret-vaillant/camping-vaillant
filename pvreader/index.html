@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>CV2020 - PVs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<html>
+    <body>
+        <div id="app">
+            <ul v-if="pages.length">
+                <li v-for="page in pages">
+                    {{ page.name }}
+                </li>
+            </ul>
+            <p v-else>
+                Chargement...
+            </p>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    pages: []
+                },
+                created(){
+                    fetch("get_content.php")
+                        .then(response => response.json())
+                        .then(json => this.pages = json)
+                }
+            })
+        </script>
+    </body>
+</html>
