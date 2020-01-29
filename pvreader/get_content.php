@@ -19,10 +19,13 @@ $pages = [];
 foreach ($files as $name) {
     $content = file_get_contents("$folder/$name");
     if($content){
-        $title = explode("\n", $content)[0];
-        $title = array_pop(explode("# ", $title));
+        $lines = explode("\n", $content);
+        $first_line = $lines[0];
+        $title = array_pop(explode("# ", $first_line));
+        $last_line = array_pop($lines);
+        $tags = array_pop(explode("tags: ", $last_line));
         $html = $converter->convertToHtml($content);
-        $pages[] = compact("name", "title", "content", "html");
+        $pages[] = compact("name", "title", "content", "html", "tags");
     }
 }
 
