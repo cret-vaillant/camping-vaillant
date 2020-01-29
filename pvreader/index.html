@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.1.5/dist/vue-router.js"></script>
 </head>
 <html>
     <body>
         <div id="app">
             <ul v-if="pages.length">
                 <li v-for="page in pages">
-                    {{ page.name }}
+                    <router-link :to="page.name">{{ page.name }}</router-link>
                 </li>
             </ul>
-            <p v-else>
-                Chargement...
-            </p>
+            <router-view></router-view>
         </div>
         <script>
             var app = new Vue({
@@ -27,7 +26,23 @@
                     fetch("get_content.php")
                         .then(response => response.json())
                         .then(json => this.pages = json)
-                }
+                },
+                router: new VueRouter({
+                    routes: [{
+                        path: "/:page",
+                        component: {
+                            template: "<pre>{{content}}</pre>",
+                            computed: {
+                                content() {
+                                    var page = this.$parent.pages.find(p => {
+                                        return this.$route.params.page === p.name
+                                    })
+                                    return page ? page.content : "Chargement..."
+                                }
+                            }
+                        }
+                    }]
+                })
             })
         </script>
     </body>
