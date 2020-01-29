@@ -51,7 +51,16 @@
                     </li>
                 </ul>
             </nav>
-            <router-view id="content"></router-view>
+            <div id="content">
+                <div :style="{textAlign:'right',padding:'10px', marginBottom:'-20px'}">
+                    <a
+                        v-if="$route.params.page"
+                        :href="'https://github.com/j4kim/cret-vaillant/edit/master/pv/' + $route.params.page"
+                        target="_blank"
+                    >Editer</a>
+                </div>
+                <router-view />
+            </div>
         </div>
         <script>
             var app = new Vue({
