@@ -6,16 +6,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router@3.1.5/dist/vue-router.js"></script>
+    <style>
+        body,html{
+            margin:0;
+            padding:0;
+        }
+        #app{
+            display: flex;
+        }
+        #app > *{
+            height: 100vh;
+            overflow: auto;
+        }
+        #sidebar{
+            padding: 20px;
+            width: 400px;
+        }
+        #sidebar ul{
+            list-style: none;
+            padding-left: 0;
+            font-size: .9em;
+            line-height: 1.4em;
+        }
+        #sidebar ul li{
+            margin-bottom: .8em;
+        }
+        #content{
+            width: 100%;
+        }
+    </style>
 </head>
 <html>
     <body>
         <div id="app" class="markdown-body">
-            <ul v-if="pages.length">
-                <li v-for="page in pages">
-                    <router-link :to="page.name">{{ page.title }}</router-link>
-                </li>
-            </ul>
-            <router-view></router-view>
+            <nav id="sidebar">
+                <ul v-if="pages.length">
+                    <li v-for="page in pages">
+                        <router-link :to="page.name">{{ page.title }}</router-link>
+                    </li>
+                </ul>
+            </nav>
+            <router-view id="content"></router-view>
         </div>
         <script>
             var app = new Vue({
