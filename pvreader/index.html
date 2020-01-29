@@ -3,12 +3,13 @@
     <title>CV2020 - PVs</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router@3.1.5/dist/vue-router.js"></script>
 </head>
 <html>
     <body>
-        <div id="app">
+        <div id="app" class="markdown-body">
             <ul v-if="pages.length">
                 <li v-for="page in pages">
                     <router-link :to="page.name">{{ page.name }}</router-link>
