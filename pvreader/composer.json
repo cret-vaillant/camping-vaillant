@@ -1,5 +1,6 @@
 {
     "require": {
-        "erusev/parsedown": "^1.7"
+        "league/commonmark-ext-task-list": "^1.0",
+        "league/commonmark": "^1.2"
     }
 }

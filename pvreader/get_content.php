@@ -2,17 +2,23 @@
 
 require "vendor/autoload.php";
 
+use League\CommonMark\CommonMarkConverter;
+use League\CommonMark\Environment;
+use League\CommonMark\Ext\TaskList\TaskListExtension;
+
+$environment = Environment::createCommonMarkEnvironment();
+$environment->addExtension(new TaskListExtension());
+$converter = new CommonMarkConverter([], $environment);
+
 $folder = "../pv";
 
 $files = scandir($folder);
 
 $pages = [];
 
-$pd = new Parsedown();
-
 foreach ($files as $name) {
     $content = file_get_contents("$folder/$name");
-    $html = $pd->text($content);
+    $html = $converter->convertToHtml($content);
     $pages[] = compact("name", "content", "html");
 }
 
