@@ -74,6 +74,7 @@
                         .then(json => this.pages = json)
                 },
                 router: new VueRouter({
+                    base: "/pvreader/",
                     routes: [{
                         path: "/:page",
                         component: {
