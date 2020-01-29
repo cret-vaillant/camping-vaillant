@@ -6,11 +6,9 @@ $files = scandir($folder);
 
 $pages = [];
 
-foreach ($files as $file) {
-    $pages[] = [
-        "name" => $file,
-        "content" => file_get_contents("$folder/$file")
-    ];
+foreach ($files as $name) {
+    $content = file_get_contents("$folder/$name");
+    $pages[] = compact("name", "content");
 }
 
 echo json_encode($pages);
