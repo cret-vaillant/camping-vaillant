@@ -31,13 +31,13 @@
                     routes: [{
                         path: "/:page",
                         component: {
-                            template: "<pre>{{content}}</pre>",
+                            template: '<div v-html="html" />',
                             computed: {
-                                content() {
+                                html() {
                                     var page = this.$parent.pages.find(p => {
                                         return this.$route.params.page === p.name
                                     })
-                                    return page ? page.content : "Chargement..."
+                                    return page ? page.html : "Chargement..."
                                 }
                             }
                         }
