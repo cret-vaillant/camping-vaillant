@@ -18,8 +18,10 @@ $pages = [];
 
 foreach ($files as $name) {
     $content = file_get_contents("$folder/$name");
-    $html = $converter->convertToHtml($content);
-    $pages[] = compact("name", "content", "html");
+    if($content){
+        $html = $converter->convertToHtml($content);
+        $pages[] = compact("name", "content", "html");
+    }
 }
 
 echo json_encode($pages);
