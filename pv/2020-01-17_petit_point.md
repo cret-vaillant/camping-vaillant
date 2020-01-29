@@ -52,3 +52,7 @@ Xa: Ne pas oublier Lobsang dans les remerciement.
 
 Xa: Relancer Decathlon  
 Il faudrait envoyer le dossier avec lettre différente pour demander du matos.
+
+
+
+tags: sponso

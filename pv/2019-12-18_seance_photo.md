@@ -1,4 +1,4 @@
-# Séance photo pour affiche + capsules vidéo
+# Shooting photo
 
 Mercredi 18 décembre 2019, 18h30
 
@@ -37,3 +37,7 @@ Présences: Domingos, Léo, Etienne, Julien, Joaquim
         * [ ] Asticot
         * [ ] Golf
         * [ ] Aveugle
+
+
+
+tags: com
