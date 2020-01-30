@@ -19,13 +19,15 @@
             overflow: auto;
         }
         #sidebar{
-            padding: 20px;
-            width: 600px;
-            min-width: 200px;
+            max-width: 0px;
+            transition: width 0.4s, max-width 0.4s;
+        }
+        #sidebar.open{
+            max-width: calc(100% - 80px);
         }
         #sidebar ul{
             list-style: none;
-            padding-left: 0;
+            padding: 20px;
             font-size: .9em;
             line-height: 1.4em;
         }
@@ -37,14 +39,14 @@
         }
         #content{
             width: 100%;
-            min-width: 500px;
+            padding: 20px;
         }
     </style>
 </head>
 <html>
     <body>
         <div id="app" class="markdown-body">
-            <nav id="sidebar">
+            <nav id="sidebar" :class="menuOpen ? 'open' : ''">
                 <ul v-if="pages.length">
                     <li v-for="page in pages">
                         <router-link :to="page.name">{{ page.title }}</router-link>
@@ -52,7 +54,8 @@
                 </ul>
             </nav>
             <div id="content">
-                <div :style="{textAlign:'right',padding:'10px', marginBottom:'-20px'}">
+                <button @click="menuOpen = !menuOpen">☰</button>
+                <div :style="{textAlign:'right', marginBottom:'-20px'}">
                     <a
                         v-if="$route.params.page"
                         :href="'https://github.com/j4kim/cret-vaillant/edit/master/pv/' + $route.params.page"
@@ -66,7 +69,8 @@
             var app = new Vue({
                 el: "#app",
                 data: {
-                    pages: []
+                    pages: [],
+                    menuOpen: false
                 },
                 created(){
                     fetch("get_content.php")
