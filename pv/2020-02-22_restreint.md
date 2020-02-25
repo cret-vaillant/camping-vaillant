@@ -35,7 +35,7 @@ Affiche ?
 
 ## Animation
 
-### Aurélien
+### Aurélien
 
 Plusieurs possibilités, dépend de notre budget.
 
