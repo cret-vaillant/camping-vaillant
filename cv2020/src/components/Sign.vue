@@ -1,18 +1,28 @@
 <template>
   <div class="sign">
+    <div class="stick"></div>
     <div class="panel">
       <slot></slot>
     </div>
-    <div class="stick"></div>
   </div>
 </template>
 
 <style lang="scss">
 .sign{
+  position: relative;
   .panel{
+    position: relative;
     padding: 20px;
     text-align: center;
     background-color: white;
+  }
+  .stick{
+    background-color: grey;
+    height: 400px;
+    width: 20px;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: -20px;
   }
 }
 </style>
