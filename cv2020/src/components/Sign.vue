@@ -1,11 +1,21 @@
 <template>
-  <div class="sign">
+  <div class="sign" :style="{
+    transform: 'rotate('+rotate+'deg)'
+  }">
     <div class="stick"></div>
     <div class="panel">
       <slot></slot>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    rotate: {type: Number}
+  }
+}
+</script>
 
 <style lang="scss">
 .sign{
