@@ -5,7 +5,7 @@
       <h1>Camping Vaillant</h1>
       <p>La 11<sup>ème</sup> fête du Crêt-Vaillant</p>
     </sign>
-    <sign :rotate="2">
+    <sign :rotate="2" :stick-width="16">
       <h2>19 & 20 JUIN 2020</h2>
       <h3>Le Locle</h3>
     </sign>

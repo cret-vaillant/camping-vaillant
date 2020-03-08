@@ -2,7 +2,11 @@
   <div class="sign" :style="{
     transform: 'rotate('+rotate+'deg)'
   }">
-    <div class="stick"></div>
+    <div class="stick" :style="{
+      width: stickWidth + 'px',
+      height: stickHeight + 'px',
+      left: 'calc(50% - ' + stickWidth/2 + 'px)'
+    }"></div>
     <div class="panel">
       <slot></slot>
     </div>
@@ -12,7 +16,9 @@
 <script>
 export default {
   props: {
-    rotate: {type: Number}
+    rotate: { type: Number },
+    stickWidth: { type: Number, default: 20 },
+    stickHeight: { type: Number, default: 400 }
   }
 }
 </script>
@@ -28,10 +34,7 @@ export default {
   }
   .stick{
     background-color: grey;
-    height: 400px;
-    width: 20px;
     position: absolute;
-    left: calc(50% - 10px);
     top: -20px;
   }
 }
