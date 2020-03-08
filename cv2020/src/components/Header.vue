@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="header">
     <sign :rotate="-1">
       <p>Le</p>
       <h1>Camping Vaillant</h1>
@@ -15,7 +15,7 @@
 <script>
 import Sign from "@/components/Sign"
 export default {
-  name: "Home",
+  name: "Header",
   components: {
     Sign
   }
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-.home{
+.header{
   display: flex;
   justify-content: center;
   align-items: center;

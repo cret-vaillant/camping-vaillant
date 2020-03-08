@@ -1,8 +1,18 @@
 <template>
   <div id="app">
+    <cv-header/>
     <router-view/>
   </div>
 </template>
+
+<script>
+import CvHeader from "@/components/Header"
+export default {
+  components: {
+    CvHeader
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
