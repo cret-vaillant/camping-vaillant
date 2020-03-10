@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { get } from 'axios'
-import { lexer, parser } from 'marked'
+import { lexer } from 'marked'
 import { last } from 'lodash'
 
 Vue.config.productionTip = false
@@ -10,6 +10,9 @@ Vue.config.productionTip = false
 new Vue({
   router,
   render: h => h(App),
+  data: {
+    sections: []
+  },
   created(){
     get("content.md")
       .then(r => r.data)
@@ -34,8 +37,7 @@ new Vue({
         }
         last(sections).tokens.push(t)
       })
-      console.log(sections)
-      sections.forEach(s => console.log(parser(s.tokens)))
+      this.sections = sections
     }
   }
 }).$mount('#app')
