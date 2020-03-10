@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { get } from 'axios'
-import { lexer, parser } from 'marked'
+import { lexer, parser } from 'marked/lib/marked'
 import { last } from 'lodash'
 
 Vue.config.productionTip = false
