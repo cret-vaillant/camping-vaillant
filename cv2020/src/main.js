@@ -18,7 +18,7 @@ new Vue({
   methods: {
     parseContent(md){
       let tokens = lexer(md)
-      let sections = []
+      let sections = [[]]
       tokens.forEach(t => {
         if (t.type === "html" && t.text.startsWith("<!-- section")) {
           sections.push([])
