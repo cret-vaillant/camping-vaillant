@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { get } from 'axios'
-import { lexer } from 'marked'
+import { lexer, parser } from 'marked'
 import { last } from 'lodash'
 
 Vue.config.productionTip = false
@@ -20,12 +20,12 @@ new Vue({
   },
   methods: {
     newSection(name){
-      let tokens = []
+      var tokens = []
       tokens.links = {}
       return { name, tokens }
     },
     parseContent(md){
-      let tokens = lexer(md)
+      var tokens = lexer(md)
       let sections = []
       let sectionRegEx = /<!-- section (.*) -->/
       tokens.forEach(t => {
@@ -36,6 +36,9 @@ new Vue({
           sections.push(this.newSection("first section"))
         }
         last(sections).tokens.push(t)
+      })
+      sections.forEach(s => {
+        s.html = parser(s.tokens)
       })
       this.sections = sections
     }
