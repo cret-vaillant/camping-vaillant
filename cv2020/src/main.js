@@ -23,15 +23,17 @@ new Vue({
       tokens.forEach(t => {
         var sectionMatch = t.type === "html" ? t.text.match(sectionRegEx) : false
         if (sectionMatch) {
+          let newTokens = []
+          newTokens.links = {}
           sections.push({
             name: sectionMatch[1],
-            tokens: []
+            tokens: newTokens
           })
         }
         last(sections).tokens.push(t)
       })
       console.log(sections)
-      console.log(parser(tokens))
+      sections.forEach(s => console.log(parser(s.tokens)))
     }
   }
 }).$mount('#app')
