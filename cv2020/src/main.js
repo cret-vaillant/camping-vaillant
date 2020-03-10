@@ -16,6 +16,11 @@ new Vue({
       .then(this.parseContent)
   },
   methods: {
+    newSection(name){
+      let tokens = []
+      tokens.links = {}
+      return { name, tokens }
+    },
     parseContent(md){
       let tokens = lexer(md)
       let sections = []
@@ -23,12 +28,9 @@ new Vue({
       tokens.forEach(t => {
         var sectionMatch = t.type === "html" ? t.text.match(sectionRegEx) : false
         if (sectionMatch) {
-          let newTokens = []
-          newTokens.links = {}
-          sections.push({
-            name: sectionMatch[1],
-            tokens: newTokens
-          })
+          sections.push(this.newSection(sectionMatch[1]))
+        } else if (sections.length === 0) {
+          sections.push(this.newSection("first section"))
         }
         last(sections).tokens.push(t)
       })
