@@ -1,13 +1,31 @@
-# Coucou
+<!-- section Bienvenue -->
 
-<!-- section 1 -->
+# Bienvenue au Camping Vaillant !
 
-## Hello
 
-Salut
 
-<!-- section 2 -->
+<!-- section Programme -->
 
-# Bye
+# Programme
 
-Ok ciao
+## Concerts
+
+## Spectacles
+
+## Tournois
+
+<!-- section Infos -->
+
+# Infos pratiques
+
+## Qu'est-ce que c'est ?
+
+## Prix
+
+## Accès
+
+## Handicap
+
+## Camping
+
+## Contact
