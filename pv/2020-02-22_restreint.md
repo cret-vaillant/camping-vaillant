@@ -39,7 +39,7 @@ Affiche ?
 
 Plusieurs possibilités, dépend de notre budget.
 
-1. Atelier cirque (bobine momnocycle) pour enfants le samedi aprem (300 CHF pour 2 heures)
+1. Atelier cirque (bobine/monocycle) pour enfants le samedi aprem (300 CHF pour 2 heures)
 2. Déambulation (pas de trucs dans le thème) mais genre policier sur échasse (300 CHF 1h)
 3. Spectacle de feu (750 CHF)
 4. Groupe de théàtre (au chapeau, 100 CHF)
