@@ -22,6 +22,6 @@ export default {
   color: #222222;
 }
 body {
-  background-color: aquamarine;
+  background-color: aquamarine !important;
 }
 </style>
