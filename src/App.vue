@@ -1,10 +1,15 @@
 <template>
-  <b-container id="app">
-    <cv-header/>
-    <main class="p-3">
-      <router-view/>
-    </main>
-  </b-container>
+  <div id="app">
+    <b-container>
+      <cv-header/>
+      <main class="p-3">
+        <router-view/>
+      </main>
+    </b-container>
+    <footer>
+      Ici, le footer
+    </footer>
+  </div>
 </template>
 
 <script>
