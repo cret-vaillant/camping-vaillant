@@ -2,8 +2,6 @@
 
 # Bienvenue au Camping Vaillant !
 
-updated content!
-
 <!-- section Programme -->
 
 # Programme
