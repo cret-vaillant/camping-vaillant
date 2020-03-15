@@ -1,5 +1,5 @@
 <template>
-  <b-container class="header mt-5">
+  <header class="mt-5">
     <b-row align-v="center">
       <b-col>
         <sign :rotate="-1">
@@ -15,7 +15,7 @@
         </sign>
       </b-col>
     </b-row>
-  </b-container>
+  </header>
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-.header{
+header{
   h1,h3{
     font-style: italic;
   }

@@ -1,10 +1,10 @@
 <template>
-  <div id="app">
+  <b-container id="app">
     <cv-header/>
-    <b-container tag="main" class="p-3">
+    <main class="p-3">
       <router-view/>
-    </b-container>
-  </div>
+    </main>
+  </b-container>
 </template>
 
 <script>
