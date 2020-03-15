@@ -7,7 +7,7 @@
       height: stickHeight + 'px',
       left: 'calc(50% - ' + stickWidth/2 + 'px)'
     }"></div>
-    <div class="panel">
+    <div class="panel" :class="'p-' + padding">
       <slot></slot>
     </div>
   </div>
@@ -18,7 +18,8 @@ export default {
   props: {
     rotate: { type: Number },
     stickWidth: { type: Number, default: 20 },
-    stickHeight: { type: Number, default: 400 }
+    stickHeight: { type: Number, default: 400 },
+    padding: { type:String, default: "1" }
   }
 }
 </script>
@@ -28,7 +29,6 @@ export default {
   position: relative;
   .panel{
     position: relative;
-    padding: 20px;
     text-align: center;
     background-color: white;
     > * {
