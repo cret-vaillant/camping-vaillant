@@ -31,6 +31,9 @@ export default {
     padding: 20px;
     text-align: center;
     background-color: white;
+    > * {
+      margin: 0;
+    }
   }
   .stick{
     background-color: grey;
