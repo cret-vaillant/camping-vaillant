@@ -1,14 +1,16 @@
 <template>
-  <div class="sign" :style="{
-    transform: 'rotate('+rotate+'deg)'
-  }">
-    <div class="stick" :style="{
-      width: stickWidth + 'px',
-      height: stickHeight + 'px',
-      left: 'calc(50% - ' + stickWidth/2 + 'px)'
-    }"></div>
-    <div class="panel">
-      <slot></slot>
+  <div>
+    <div class="sign" :style="{
+      transform: 'rotate('+rotate+'deg)'
+    }">
+      <div class="stick" :style="{
+        width: stickWidth + 'px',
+        height: stickHeight + 'px',
+        left: 'calc(50% - ' + stickWidth/2 + 'px)'
+      }"></div>
+      <div class="panel">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +28,8 @@ export default {
 <style lang="scss">
 .sign{
   position: relative;
+  max-width: 400px;
+  margin: auto;
   .panel{
     position: relative;
     padding: 20px;

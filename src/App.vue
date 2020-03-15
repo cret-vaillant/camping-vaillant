@@ -1,8 +1,10 @@
 <template>
-  <div id="app">
+  <main id="app">
     <cv-header/>
-    <router-view/>
-  </div>
+    <article>
+      <router-view/>
+    </article>
+  </main>
 </template>
 
 <script>
