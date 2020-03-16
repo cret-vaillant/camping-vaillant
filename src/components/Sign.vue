@@ -1,5 +1,5 @@
 <template>
-  <div class="sign" :style="{
+  <div class="sign" :class="shadow ? 'sign-shadow' : ''" :style="{
     transform: 'rotate('+rotate+'deg)'
   }">
     <div class="stick" :style="{
@@ -23,7 +23,8 @@ export default {
     stickHeight: { default: 400 },
     padding: { default: 1 },
     stickTop: { default: -20 },
-    stickRadius: { default: 5 }
+    stickRadius: { default: 5 },
+    shadow: { default: true }
   }
 }
 </script>
@@ -42,6 +43,9 @@ export default {
   .stick{
     background-color: #625642;
     position: absolute;
+  }
+  &.sign-shadow > *{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.05);
   }
 }
 </style>
