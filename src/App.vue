@@ -37,6 +37,11 @@ export default {
   }
 }
 body {
-  background-color: #b2cef9 !important;
+  background-color: #84b4f5 !important;
+  background: linear-gradient(5deg,#bbd5fb 0%, #84b4f5 100%);
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 </style>
