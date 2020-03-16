@@ -1,6 +1,6 @@
 <!-- section Bienvenue -->
 
-# Bienvenue au Camping Vaillant !
+# Bienvenue au Camping Vaillant&nbsp;!
 
 <!-- section Programme -->
 
@@ -16,7 +16,7 @@
 
 # Infos pratiques
 
-## Qu'est-ce que c'est ?
+## Qu'est-ce que c'est&nbsp;?
 
 ## Prix
 
