@@ -5,7 +5,8 @@
     <div class="stick" :style="{
       width: stickWidth + 'px',
       height: stickHeight + 'px',
-      left: 'calc(50% - ' + stickWidth/2 + 'px)'
+      left: 'calc(50% - ' + stickWidth/2 + 'px)',
+      top: stickTop + 'px'
     }"></div>
     <div class="panel" :class="'p-' + padding">
       <slot></slot>
@@ -16,10 +17,11 @@
 <script>
 export default {
   props: {
-    rotate: { type: Number },
-    stickWidth: { type: Number, default: 20 },
-    stickHeight: { type: Number, default: 400 },
-    padding: { type:String, default: "1" }
+    rotate: { default: 0 },
+    stickWidth: { default: 20 },
+    stickHeight: { default: 400 },
+    padding: { default: 1 },
+    stickTop: { default: -20 }
   }
 }
 </script>
@@ -38,7 +40,6 @@ export default {
   .stick{
     background-color: grey;
     position: absolute;
-    top: -20px;
   }
 }
 </style>
