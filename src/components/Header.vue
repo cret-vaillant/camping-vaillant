@@ -2,14 +2,14 @@
   <header class="mt-5">
     <b-row align-v="center">
       <b-col>
-        <sign :rotate="-1">
+        <sign :rotate="-1" padding="3">
           <p>Le</p>
           <h1>Camping Vaillant</h1>
           <p>La 11<sup>ème</sup> fête du Crêt-Vaillant</p>
         </sign>
       </b-col>
       <b-col>
-        <sign :rotate="2" :stick-width="16">
+        <sign :rotate="2" :stick-width="16" padding="2">
           <h2>19 <small>&</small> 20 JUIN 2020</h2>
           <h3>Le Locle</h3>
         </sign>
