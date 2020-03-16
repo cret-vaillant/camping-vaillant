@@ -37,6 +37,6 @@ export default {
   }
 }
 body {
-  background-color: aquamarine !important;
+  background-color: #b2cef9 !important;
 }
 </style>

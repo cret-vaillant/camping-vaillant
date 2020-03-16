@@ -38,7 +38,7 @@ export default {
     }
   }
   .stick{
-    background-color: grey;
+    background-color: #625642;
     position: absolute;
   }
 }
