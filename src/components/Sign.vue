@@ -6,7 +6,8 @@
       width: stickWidth + 'px',
       height: stickHeight + 'px',
       left: 'calc(50% - ' + stickWidth/2 + 'px)',
-      top: stickTop + 'px'
+      top: stickTop + 'px',
+      borderRadius: stickRadius + 'px'
     }"></div>
     <div class="panel" :class="'p-' + padding">
       <slot></slot>
@@ -21,7 +22,8 @@ export default {
     stickWidth: { default: 20 },
     stickHeight: { default: 400 },
     padding: { default: 1 },
-    stickTop: { default: -20 }
+    stickTop: { default: -20 },
+    stickRadius: { default: 5 }
   }
 }
 </script>
