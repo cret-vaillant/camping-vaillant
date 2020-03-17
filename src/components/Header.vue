@@ -36,6 +36,7 @@
           stick-top="0"
         >
           <h2>19&nbsp;<small>&</small>&nbsp;20 JUIN 2020</h2>
+          <h3>Le Locle</h3>
         </sign>
       </b-col>
     </b-row>
@@ -52,9 +53,7 @@
           stick-width="12"
           stick-radius="0"
         >
-          <h3>11<sup>ème</sup> fête du Crêt-Vaillant</h3>
-          <div class="spacer m-2"></div>
-          <h3>Le Locle</h3>
+          <h3>La 11<sup>ème</sup> fête du Crêt-Vaillant</h3>
         </sign>
       </b-col>
     </b-row>
@@ -91,10 +90,6 @@ header{
     }
     h3{
       font-size: 1.3rem;
-    }
-    .spacer{
-      background-color: #222222;
-      height: 2px;
     }
     &.sign-1{
       max-width: 300px;
