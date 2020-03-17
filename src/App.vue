@@ -45,11 +45,10 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    padding-bottom: 180px;
+    padding-bottom: 6rem;
     main {
       background-color: white;
       margin-top: 8rem;
-      margin-bottom: 6rem;
       position: relative;
       min-height: 400px;
     }
