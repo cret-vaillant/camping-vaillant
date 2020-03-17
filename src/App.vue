@@ -45,7 +45,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    padding-bottom: 6rem;
+    padding-bottom: 20vh;
     main {
       background-color: white;
       margin-top: 8rem;
