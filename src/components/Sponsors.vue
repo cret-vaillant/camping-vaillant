@@ -13,7 +13,11 @@
         v-for="sponsor in $root.sponsors"
         :key="sponsor.name"
       >
-        <h3>{{ sponsor.name }}</h3>
+        <img
+          v-if="sponsor.logo"
+          :src="'logos/' + sponsor.logo + '.png'"
+        />
+        <h3 v-else>{{ sponsor.name }}</h3>
       </sign>
     </div>
   </b-container>
@@ -44,6 +48,10 @@ export default {
       max-width: 200px;
       max-height: 150px;
       padding: 10px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
   }
 }
