@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <div>
-      <b-container>
-        <cv-header/>
-        <main class="p-3">
-          <router-view/>
-        </main>
-      </b-container>
+    <div class="sky">
+      <div class="content pt-5">
+        <b-container>
+          <cv-header/>
+          <main class="p-3">
+            <router-view/>
+          </main>
+        </b-container>
+      </div>
     </div>
     <footer>
       <sponsors/>
@@ -28,17 +30,16 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap');
 
-body {
-  background-color: #84b4f5 !important;
-}
-
 #app {
   font-family: Lato, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #222222;
-  > div {
-    background: linear-gradient(5deg,#bbd5fb 0%, #84b4f5 100%);
+  div.sky {
+    background-color: #84b4f5;
+    background-image: linear-gradient(5deg,#bbd5fb 0%, #84b4f5 100%);
+  }
+  div.content {
     background-image: url("background.png");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -52,7 +53,8 @@ body {
     }
   }
   > footer {
-    background: white;
+    background: #53b45a;
+    padding-bottom: 100px;
   }
 }
 </style>

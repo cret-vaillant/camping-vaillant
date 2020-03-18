@@ -1,6 +1,6 @@
 <template>
   <b-container fluid class="pt-3 pb-4 sponsors">
-    <h2 class="mb-4">{{ $root.sponsorHeader }}</h2>
+    <h1 class="mb-4">{{ $root.sponsorHeader }}</h1>
     <div class="sponsor-grid">
       <sign
         class="sponsor"

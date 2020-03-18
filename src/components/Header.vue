@@ -1,5 +1,5 @@
 <template>
-  <header class="mt-5">
+  <header>
     <b-row>
       <b-col
         offset="0" cols="10"
