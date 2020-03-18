@@ -21,6 +21,9 @@
     justify-content: center;
     .sponsor {
       margin: 5px;
+      max-width: 200px;
+      max-height: 150px;
+      padding: 10px;
     }
   }
 }
