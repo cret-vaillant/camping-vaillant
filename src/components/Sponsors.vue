@@ -2,14 +2,30 @@
   <b-container fluid class="pt-3 pb-4 sponsors">
     <h2 class="mb-4">{{ $root.sponsorHeader }}</h2>
     <div class="sponsor-grid">
-      <div class="sponsor"
-        v-for="sponsor in $root.sponsors" :key="sponsor.name"
+      <sign
+        class="sponsor"
+        stick-height="150"
+        stick-width="8"
+        padding="1"
+        stick-top="4"
+        stick-radius="0"
+        v-for="sponsor in $root.sponsors"
+        :key="sponsor.name"
       >
         <h3>{{ sponsor.name }}</h3>
-      </div>
+      </sign>
     </div>
   </b-container>
 </template>
+
+<script>
+import Sign from "@/components/Sign"
+export default {
+  components: {
+    Sign
+  }
+}
+</script>
 
 <style lang="scss">
 .sponsors{
@@ -20,7 +36,6 @@
     align-items: center;
     justify-content: center;
     .sponsor {
-      margin: 5px;
       max-width: 200px;
       max-height: 150px;
       padding: 10px;
