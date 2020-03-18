@@ -1,15 +1,12 @@
 <template>
   <b-container fluid class="pt-3 pb-4 sponsors">
-    <h2 class="mb-4">Nous remercions chaleureusement nos partenaires pour leur précieuse aide&nbsp;!</h2>
+    <h2 class="mb-4">{{ $root.sponsorHeader }}</h2>
     <div class="sponsor-grid">
-      <div
-        v-for="i in 30" :key="i"
-        class="sponsor bg-primary"
-        :style="{
-          width: 100 + Math.random() * 100 + 'px',
-          height: 100 + Math.random() * 100 + 'px'
-        }"
-      >{{i}}</div>
+      <div class="sponsor"
+        v-for="sponsor in $root.sponsors" :key="sponsor.name"
+      >
+        <h3>{{ sponsor.name }}</h3>
+      </div>
     </div>
   </b-container>
 </template>

@@ -60,7 +60,7 @@ new Vue({
         get(url).then(response => {
           var data = response.data.values
           console.log(data)
-          this.sponsorHeader = data.shift()
+          this.sponsorHeader = data.shift()[0]
           var header = data.shift()
           data.forEach(row => {
               var sponsor = zipObject(header, row)
