@@ -9,20 +9,18 @@
       </b-container>
     </div>
     <footer>
-      <b-container fluid class="pt-3 pb-4">
-        <h2>
-            Nous remercions chaleureusement nos partenaires pour leur précieuse aide&nbsp;!
-        </h2>
-      </b-container>
+      <sponsors/>
     </footer>
   </div>
 </template>
 
 <script>
 import CvHeader from "@/components/Header"
+import Sponsors from "@/components/Sponsors"
+
 export default {
   components: {
-    CvHeader
+    CvHeader, Sponsors
   }
 }
 </script>
