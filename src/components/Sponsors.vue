@@ -31,6 +31,10 @@ export default {
 <style lang="scss">
 .sponsors{
   text-align: center;
+  h1{
+    font-style: italic;
+    font-weight: bold;
+  }
   .sponsor-grid {
     display: flex;
     flex-wrap: wrap;
