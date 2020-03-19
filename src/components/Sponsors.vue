@@ -1,7 +1,10 @@
 <template>
   <b-container fluid class="pt-3 pb-4 sponsors">
     <h1 class="mb-4">{{ $root.sponsorHeader }}</h1>
-    <div class="sponsor-grid">
+    <div class="sponsor-grid"
+      v-for="(sponsorLine, i) in $root.sponsors"
+      :key="i"
+    >
       <sign
         class="sponsor"
         stick-height="150"
@@ -10,7 +13,7 @@
         stick-top="4"
         stick-radius="0"
         :rotate="Math.random() * 4 - 2"
-        v-for="sponsor in $root.sponsors"
+        v-for="sponsor in sponsorLine"
         :key="sponsor.name"
       >
         <img

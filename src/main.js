@@ -61,12 +61,19 @@ new Vue({
           var data = response.data.values
           this.sponsorHeader = data.shift()[0]
           var header = data.shift()
+          let level = 0
+          let sponsorLines = []
           data.forEach(row => {
-              var sponsor = zipObject(header, row)
-              if(sponsor.name){
-                  this.sponsors.push(sponsor)
+            var sponsor = zipObject(header, row)
+            if(sponsor.name){
+              if(sponsor.level > level){
+                sponsorLines.push([])
+                level = sponsor.level
               }
+              last(sponsorLines).push(sponsor)
+            }
           })
+          this.sponsors = sponsorLines
       })
     }
   }
