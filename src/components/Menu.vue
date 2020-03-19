@@ -5,7 +5,9 @@
         v-for="section in $root.sections"
         :key="section.name"
       >
-        {{ section.name }}
+        <router-link :to="section.name">
+          {{ section.name }}
+        </router-link>
       </b-col>
     </b-row>
   </nav>
