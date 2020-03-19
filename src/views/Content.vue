@@ -13,10 +13,7 @@ export default {
       return section || this.$root.sections[0]
     },
     html() {
-      if (this.$root.sections.length) {
-        return this.section.html
-      }
-      return "Chargement..."
+      return this.$root.sections.length ? this.section.html : "Chargement..."
     }
   }
 }
