@@ -45,9 +45,6 @@ export default {
   position: relative;
   cursor: pointer;
   transition: transform .05s;
-  &:hover{
-    transform: scale(2);
-  }
   .panel{
     position: relative;
     text-align: center;
