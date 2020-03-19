@@ -6,9 +6,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/:sectionName?',
     name: 'Content',
-    component: Content
+    component: Content,
+    props: true
   }
 ]
 
