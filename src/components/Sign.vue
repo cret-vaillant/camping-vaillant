@@ -1,7 +1,13 @@
 <template>
-  <div class="sign" :class="shadow ? 'sign-shadow' : ''" :style="{
-    transform: 'rotate('+rotate+'deg)'
-  }">
+  <div class="sign" :class="shadow ? 'sign-shadow' : ''"
+    :style="{
+      transform: 'rotate('+rotate+'deg)' + (
+        pointed ? ' translateY(-5px) scale(1.05)' : '' 
+      )
+    }"
+    @mouseenter="pointed = true"
+    @mouseleave="pointed = false"
+  >
     <div class="stick" :style="{
       width: stickWidth + 'px',
       height: stickHeight + 'px',
@@ -17,6 +23,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      pointed: false
+    }
+  },
   props: {
     rotate: { default: 0 },
     stickWidth: { default: 20 },
@@ -32,6 +43,11 @@ export default {
 <style lang="scss">
 .sign{
   position: relative;
+  cursor: pointer;
+  transition: transform .05s;
+  &:hover{
+    transform: scale(2);
+  }
   .panel{
     position: relative;
     text-align: center;
