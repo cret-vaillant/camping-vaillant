@@ -9,7 +9,7 @@
         padding="1"
         stick-top="4"
         stick-radius="0"
-        :pointable="sponsor.link.length"
+        :pointable="sponsor.link !== ''"
         :rotate="Math.random() * 4 - 2"
         v-for="sponsor in $root.sponsors"
         :key="sponsor.name"
