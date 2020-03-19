@@ -4,6 +4,7 @@
       <div class="content pt-5">
         <b-container>
           <cv-header/>
+          <cv-menu/>
           <main class="p-3">
             <router-view/>
           </main>
@@ -19,10 +20,11 @@
 <script>
 import CvHeader from "@/components/Header"
 import Sponsors from "@/components/Sponsors"
+import CvMenu from "@/components/Menu"
 
 export default {
   components: {
-    CvHeader, Sponsors
+    CvHeader, Sponsors, CvMenu
   }
 }
 </script>
@@ -45,9 +47,11 @@ export default {
     background-position: bottom;
     background-size: contain;
     padding-bottom: 20vh;
+    header {
+      margin-bottom: 8rem;
+    }
     main {
       background-color: white;
-      margin-top: 8rem;
       position: relative;
       min-height: 400px;
     }
