@@ -1,10 +1,6 @@
 <template>
   <div class="sign" :class="shadow ? 'sign-shadow' : ''"
-    :style="{
-      transform: 'rotate('+rotate+'deg)' + (
-        pointed ? ' translateY(-5px) scale(1.05)' : '' 
-      )
-    }"
+    :style="style"
     @mouseenter="pointed = true"
     @mouseleave="pointed = false"
   >
@@ -28,6 +24,18 @@ export default {
       pointed: false
     }
   },
+  computed: {
+    style() {
+      let rules = {
+        transform: "rotate(" + this.rotate + "deg)"
+      }
+      if (this.pointable && this.pointed) {
+        rules.transform += " translateY(-5px) scale(1.05)"
+        rules.cursor = "pointer"
+      }
+      return rules
+    }
+  },
   props: {
     rotate: { default: 0 },
     stickWidth: { default: 20 },
@@ -35,7 +43,8 @@ export default {
     padding: { default: 1 },
     stickTop: { default: -20 },
     stickRadius: { default: 5 },
-    shadow: { default: true }
+    shadow: { default: true },
+    pointable: Boolean
   }
 }
 </script>
@@ -43,7 +52,6 @@ export default {
 <style lang="scss">
 .sign{
   position: relative;
-  cursor: pointer;
   transition: transform .05s;
   .panel{
     position: relative;
