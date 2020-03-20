@@ -8,12 +8,14 @@
       no-gutters
     >
       <b-col
-        v-for="sponsor in $root.sponsors"
-        :key="sponsor.name"
+        v-for="(sponsor, i) in $root.sponsors"
+        :key="i"
         cols="6"
         sm="auto"
+        :class="sponsor.name === 'wrap' ? 'w-100' : ''"
       >
         <sign
+          v-if="sponsor.name !== 'wrap'"
           class="sponsor"
           stick-height="150"
           stick-width="8"
