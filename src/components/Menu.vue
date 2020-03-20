@@ -29,9 +29,13 @@ export default {
 <style lang="scss" scoped>
 a{
   color: inherit;
+  display: block;
   &:hover{
     text-decoration: none;
     color: inherit;
+  }
+  &.router-link-active{
+    transform: translateY(-20px);
   }
 }
 </style>
