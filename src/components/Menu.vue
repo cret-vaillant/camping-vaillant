@@ -2,10 +2,13 @@
   <nav>
     <b-row align-h="end">
       <b-col cols="4" sm="auto"
-        v-for="section in $root.sections"
+        v-for="(section, i) in $root.sections"
         :key="section.name"
       >
-        <router-link :to="section.name">
+        <router-link
+          :to="section.name"
+          :class="$route.path === '/' && i === 0 ? 'router-link-active' : ''"
+        >
           <sign
             pointable
             stick-width="6"
