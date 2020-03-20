@@ -1,26 +1,36 @@
 <template>
   <b-container fluid class="pt-3 pb-4 sponsors">
     <h1 class="mb-4">{{ $root.sponsorHeader }}</h1>
-    <div class="sponsor-grid">
-      <sign
-        class="sponsor"
-        stick-height="150"
-        stick-width="8"
-        padding="1"
-        stick-top="4"
-        stick-radius="0"
-        :pointable="sponsor.link !== ''"
-        :rotate="Math.random() * 4 - 2"
+    <b-row
+      class="sponsor-grid"
+      align-v="center"
+      align-h="center"
+      no-gutters
+    >
+      <b-col
         v-for="sponsor in $root.sponsors"
         :key="sponsor.name"
+        cols="6"
+        sm="auto"
       >
-        <img
-          v-if="sponsor.logo"
-          :src="'logos/' + sponsor.logo + '.png'"
-        />
-        <h3 v-else>{{ sponsor.name }}</h3>
-      </sign>
-    </div>
+        <sign
+          class="sponsor"
+          stick-height="150"
+          stick-width="8"
+          padding="1"
+          stick-top="4"
+          stick-radius="0"
+          :pointable="sponsor.link !== ''"
+          :rotate="Math.random() * 4 - 2"
+        >
+          <img
+            v-if="sponsor.logo"
+            :src="'logos/' + sponsor.logo + '.png'"
+          />
+          <h3 v-else>{{ sponsor.name }}</h3>
+        </sign>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
@@ -40,19 +50,14 @@ export default {
     font-style: italic;
     font-weight: bold;
   }
-  .sponsor-grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    .sponsor {
-      max-width: 200px;
-      max-height: 150px;
-      padding: 10px;
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
+  .sponsor {
+    max-width: 200px;
+    max-height: 150px;
+    padding: 10px;
+    margin: auto;
+    img {
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 }
