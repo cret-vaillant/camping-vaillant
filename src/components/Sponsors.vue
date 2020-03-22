@@ -10,9 +10,8 @@
       <b-col
         v-for="(sponsor, i) in $root.sponsors"
         :key="i"
-        cols="6"
         sm="auto"
-        :class="sponsor.name === 'wrap' ? 'w-100' : ''"
+        :class="sponsor.name === 'wrap' ? 'w-100' : 'col-6'"
       >
         <sign
           v-if="sponsor.name !== 'wrap'"
