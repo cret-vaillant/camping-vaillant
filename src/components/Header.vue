@@ -13,6 +13,8 @@
           rotate="-1" 
           padding="3" 
           stick-height="800"
+          pointable
+          @click="reload"
         >
           <p>Le</p>
           <h1>Camping Vaillant</h1>
@@ -66,6 +68,11 @@ export default {
   name: "Header",
   components: {
     Sign
+  },
+  methods:{
+    reload(){
+      location.href = '/'
+    }
   }
 }
 </script>
