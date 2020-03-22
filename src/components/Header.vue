@@ -32,7 +32,7 @@
           rotate="3"
           stick-width="16"
           padding="2"
-          stick-height="500"
+          stick-height="600"
           stick-top="0"
         >
           <h2>19&nbsp;<small>&</small>&nbsp;20 JUIN 2020</h2>
