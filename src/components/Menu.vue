@@ -18,11 +18,7 @@
             :to="section.name"
             :class="$route.path === '/' && i === 0 ? 'router-link-active' : ''"
           >
-            <sign
-              pointable
-              stick-width="6"
-              stick-top="0"
-            >
+            <sign pointable stick-width="6" stick-top="0">
               {{ section.name }}
             </sign>
           </router-link>
