@@ -48,7 +48,7 @@ export default {
     background-size: contain;
     padding-bottom: 20vh;
     header {
-      margin-bottom: 8rem;
+      margin-bottom: 6rem;
     }
     main {
       background-color: white;
