@@ -1,5 +1,5 @@
 <template>
-  <b-row class="menu" >
+  <b-row class="menu" align-v="end">
     <b-col sm="4" md="3" lg="2" class="social">
       <sign pointable stick-width="4" stick-top="0" rotate="-2">
         <social-link url="facebook.com/lafeteducretvaillant"/>
