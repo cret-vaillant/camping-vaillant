@@ -32,15 +32,17 @@
           <h3 v-else>{{ sponsor.name }}</h3>
         </sign>
       </b-col>
+      <b-col cols="6" sm="auto">
+        <sign
+          class="sponsor yours" stick-height="150" stick-width="8"
+          padding="1" stick-top="4" stick-radius="0"
+          pointable :rotate="Math.random() * 4 - 2"
+          @click="open('https://forms.gle/XTjS71HFzfdut4T6A')"
+        >
+          <h3>Votre panneau ici</h3>
+        </sign>
+      </b-col>
     </b-row>
-    <sign
-      class="sponsor yours" stick-height="150" stick-width="8"
-      padding="1" stick-top="4" stick-radius="0"
-      pointable :rotate="Math.random() * 4 - 2"
-      @click="open('https://forms.gle/XTjS71HFzfdut4T6A')"
-    >
-      <h3>Votre panneau ici</h3>
-    </sign>
   </b-container>
 </template>
 
