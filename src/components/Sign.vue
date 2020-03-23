@@ -66,7 +66,7 @@ export default {
     position: absolute;
   }
   &.sign-shadow > *{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   }
 }
 </style>
