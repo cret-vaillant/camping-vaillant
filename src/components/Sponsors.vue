@@ -23,6 +23,7 @@
           stick-radius="0"
           :pointable="sponsor.link !== ''"
           :rotate="Math.random() * 4 - 2"
+          @click="open(sponsor.link)"
         >
           <img
             v-if="sponsor.logo"
@@ -40,6 +41,11 @@ import Sign from "@/components/Sign"
 export default {
   components: {
     Sign
+  },
+  methods: {
+    open(url) {
+      window.open(url, '_blank')
+    }
   }
 }
 </script>

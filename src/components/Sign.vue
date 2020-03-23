@@ -3,6 +3,7 @@
     :style="style"
     @mouseenter="pointed = true"
     @mouseleave="pointed = false"
+    @click="pointable ? $emit('click') : undefined"
   >
     <div class="stick" :style="{
       width: stickWidth + 'px',
