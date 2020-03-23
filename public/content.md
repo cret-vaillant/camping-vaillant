@@ -20,9 +20,13 @@ Nous sommes évidemment préoccupés par la crise sanitaire actuelle. Pour l'ins
 
 ## Concerts
 
-## Spectacles
+## Spectacles et animations
+
+Infos à venire
 
 ## Tournois
+
+Infos à venir
 
 <!-- section Infos -->
 
