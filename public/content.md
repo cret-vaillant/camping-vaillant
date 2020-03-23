@@ -70,4 +70,4 @@ Que serait la fête du camping, sans camping ? Impensable, bien sûr. Ceux qui s
 
 ## Contact
 
-Pour toute autre information, merci de nous contacter par e-mail, à [mailto:camping@cret-vaillant.ch](camping@cret-vaillant.ch)
+Pour toute autre information, merci de nous contacter par e-mail, à [camping@cret-vaillant.ch](mailto:camping@cret-vaillant.ch)
