@@ -27,7 +27,7 @@
         >
           <img
             v-if="sponsor.logo"
-            :src="'logos/' + sponsor.logo + '.png'"
+            :src="'logos/' + sponsor.logo"
           />
           <h3 v-else>{{ sponsor.name }}</h3>
         </sign>
