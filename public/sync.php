@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://api.github.com/repos/j4kim/camping-vaillant/contents/public/content.md";
+$url = "https://api.github.com/repos/cret-vaillant/camping-vaillant/contents/public/content.md";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
