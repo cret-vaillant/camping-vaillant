@@ -2,7 +2,7 @@
 
 # Bienvenue au Camping Vaillant&nbsp;!
 
-Le vendredi 19 et le samedi 20 juin 2020, les habitants du Crêt-Vaillant vous accueillent pour la 11<sup>ème</sup> édition de leur traditionnelle fête de quartier. La rue se mue en camping pour l'occasion: pétanque, pastis, hamac, ping-pong au rendez-vous&nbsp!
+Le vendredi 19 et le samedi 20 juin 2020, les habitants du Crêt-Vaillant vous accueillent pour la 11<sup>ème</sup> édition de leur traditionnelle fête de quartier. La rue se mue en camping pour l'occasion: pétanque, pastis, hamac, ping-pong au rendez-vous&nbsp;!
 
 ## Qu'est-ce que c'est&nbsp;?
 
