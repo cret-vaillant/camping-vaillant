@@ -8,7 +8,7 @@ Le vendredi 19 et le samedi 20 juin 2020, les habitants du Crêt-Vaillant vous a
 
 La fête du Crêt-Vaillant, c'est un événement mythique au Locle. D'après les archives, les premières éditions (1977, 80 et 83) ont amenés dans la rue du Crêt-Vaillant plus de dix mille personnes&nbsp;! Depuis, une tradition s'est installé pour organiser une fête tous les 3, 4 ou 5 ans, à chaque fois sur un thème différent.
 
-En 2017, "les jeunes" de la rue ont relancé le concept plus ou moins oublié avec une [fête futuriste](https://cret-vaillant/3017). Une belle édition pour une première, malgré la météo capricieuse. En 2019, ce même comité relance un projet de fête pour 2020.
+En 2017, "les jeunes" de la rue ont relancé le concept plus ou moins oublié avec une <a href="https://cret-vaillant.ch/3017" target="_blank">fête futuriste</a>. Une belle édition pour une première, malgré la météo capricieuse. En 2019, ce même comité relance un projet de fête pour 2020.
 
 ## Et le confinement&nbsp;?
 
