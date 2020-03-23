@@ -2,7 +2,13 @@
 
 # Bienvenue au Camping Vaillant&nbsp;!
 
-Le vendredi 19 et le samedi 20 juin 2020, les habitants du Crêt-Vaillant vous accueillent pour la 11<sup>ème</sup> édition de leur traditionnelle fête de quartier.
+Le vendredi 19 et le samedi 20 juin 2020, les habitants du Crêt-Vaillant vous accueillent pour la 11<sup>ème</sup> édition de leur traditionnelle fête de quartier. La rue se mue en camping pour l'occasion: pétanque, pastis, hamac, ping-pong au rendez-vous&nbsp!
+
+## Qu'est-ce que c'est&nbsp;?
+
+La fête du Crêt-Vaillant, c'est un événement mythique au Locle. D'après les archives, les premières éditions (1977, 80 et 83) ont amenés dans la rue du Crêt-Vaillant plus de dix mille personnes&nbsp;! Depuis, une tradition s'est installé pour organiser une fête tous les 3, 4 ou 5 ans, à chaque fois sur un thème différent.
+
+En 2017, "les jeunes" de la rue ont relancé le concept plus ou moins oublié avec une [fête futuriste](https://cret-vaillant/3017). Une belle édition pour une première, malgré la météo capricieuse. En 2019, ce même comité relance un projet de fête pour 2020.
 
 ## Et le confinement&nbsp;?
 
@@ -21,8 +27,6 @@ Nous sommes évidemment préoccupés par la crise sanitaire actuelle. Pour l'ins
 <!-- section Infos -->
 
 # Infos pratiques
-
-## Qu'est-ce que c'est&nbsp;?
 
 ## Prix
 
