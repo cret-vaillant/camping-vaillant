@@ -73,7 +73,7 @@ export default {
     margin: auto;
     img {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 100px;
     }
     &.yours .panel{
       color: white;
