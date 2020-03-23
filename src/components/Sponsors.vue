@@ -33,6 +33,14 @@
         </sign>
       </b-col>
     </b-row>
+    <sign
+      class="sponsor yours" stick-height="150" stick-width="8"
+      padding="1" stick-top="4" stick-radius="0"
+      pointable :rotate="Math.random() * 4 - 2"
+      @click="open('https://cret-vaillant.ch/php/sponsoring.php')"
+    >
+      <h3>Votre panneau ici</h3>
+    </sign>
   </b-container>
 </template>
 
@@ -65,6 +73,10 @@ export default {
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+    &.yours .panel{
+      color: white;
+      background-color: #e91e63;
     }
   }
 }
