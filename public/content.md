@@ -2,6 +2,12 @@
 
 # Bienvenue au Camping Vaillant&nbsp;!
 
+Le vendredi 19 et le samedi 20 juin 2020, les habitants du Crêt-Vaillant vous accueillent pour la 11<sup>ème</sup> édition de leur traditionnelle fête de quartier.
+
+## Et le confinement&nbsp;?
+
+Nous sommes évidemment préoccupés par la crise sanitaire actuelle. Pour l'instant, nous avons décidé de maintenir la fête. Nous vous informerons de tout changement de programme en temps voulu sur nos pages [facebook](https://facebook.com/lafeteducretvaillant) et [instagram](https://instagram.com/la_fete_du_cret_vaillant/).
+
 <!-- section Programme -->
 
 # Programme
