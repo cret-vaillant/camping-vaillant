@@ -37,7 +37,7 @@
       class="sponsor yours" stick-height="150" stick-width="8"
       padding="1" stick-top="4" stick-radius="0"
       pointable :rotate="Math.random() * 4 - 2"
-      @click="open('https://cret-vaillant.ch/php/sponsoring.php')"
+      @click="open('https://forms.gle/XTjS71HFzfdut4T6A')"
     >
       <h3>Votre panneau ici</h3>
     </sign>
@@ -52,6 +52,7 @@ export default {
   },
   methods: {
     open(url) {
+      url = "https://cret-vaillant.ch/php/redirect.php?to=" + url
       window.open(url, '_blank')
     }
   }
