@@ -56,7 +56,9 @@ Infos à venir
 
 ## Prix
 
-L'entrée est gratuite. Si toutefois vous vouliez soutenir la Fête, votre don est le bienvenu. Utilisez le panneau rose en bas de cette page pour plus d'informations.
+L'entrée est gratuite.
+
+Si toutefois vous vouliez soutenir la Fête, votre don est le bienvenu. Utilisez le panneau rose en bas de cette page pour plus d'informations.
 
 ## Accès
 
@@ -64,6 +66,12 @@ L'entrée est gratuite. Si toutefois vous vouliez soutenir la Fête, votre don e
 
 ## Handicap
 
+Accueil des personnes en situations de handicap : 079 104 20 52
+
 ## Camping
 
+Que serait la fête du camping, sans camping ? Impensable, bien sûr. Ceux qui souhaiteraient camper au Crêt-Vaillant les nuits de vendredi à dimanche pourront poser leur tente dans un jardin de la rue. Il suffit de nous contacter, le camping est gratuit.
+
 ## Contact
+
+Pour toute autre information, merci de nous contacter par e-mail, à [mailto:camping@cret-vaillant.ch](camping@cret-vaillant.ch)
