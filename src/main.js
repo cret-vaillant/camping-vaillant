@@ -67,6 +67,9 @@ new Vue({
               }
           })
       })
+    },
+    updateLinkHandlers(selector) {
+      console.log("Update handler for links contained in " + selector)
     }
   }
 }).$mount('#app')

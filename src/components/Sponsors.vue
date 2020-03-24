@@ -50,6 +50,7 @@ export default {
   components: {
     Sign
   },
+  updated(){ this.$root.updateLinkHandlers(".sponsors") }
 }
 </script>
 
