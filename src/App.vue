@@ -32,7 +32,8 @@ export default {
       let a = event.target.closest("a")
       if (a && !a.matches(".internal")) {
         event.preventDefault()
-        window.open(a.href, "_blank")
+        let url = "https://cret-vaillant.ch/php/redirect.php?to=" + a.href
+        window.open(url, "_blank")
       }
     })
   }
