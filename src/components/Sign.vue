@@ -3,7 +3,6 @@
     :style="style"
     @mouseenter="pointed = true"
     @mouseleave="pointed = false"
-    @click="pointable ? $emit('click') : undefined"
   >
     <div class="stick" :style="{
       width: stickWidth + 'px',
@@ -68,6 +67,14 @@ export default {
   }
   &.sign-shadow > *{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+a.sign-link {
+  color: inherit;
+  display: block;
+  &:hover  {
+    text-decoration: none;
+    color: inherit;
   }
 }
 </style>

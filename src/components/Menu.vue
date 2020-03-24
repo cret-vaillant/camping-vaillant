@@ -15,7 +15,7 @@
           :key="section.name"
         >
           <router-link
-            :to="section.name"
+            :to="section.name" class="sign-link"
             :class="$route.path === '/' && i === 0 ? 'router-link-active' : ''"
           >
             <sign pointable stick-width="6" stick-top="0">
@@ -37,16 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a{
-  color: inherit;
-  display: block;
-  &:hover{
-    text-decoration: none;
-    color: inherit;
-  }
-  &.router-link-active{
-    transform: translateY(-20px);
-  }
+a.sign-link.router-link-active{
+  transform: translateY(-20px);
 }
 .social{
   display: flex;
