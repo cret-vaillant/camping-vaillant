@@ -14,34 +14,30 @@
         :class="sponsor.name === 'wrap' ? 'w-100' : 'col-6'"
       >
         <a :href="sponsor.link" class="sign-link">
-        <sign
-          v-if="sponsor.name !== 'wrap'"
-          class="sponsor"
-          stick-height="150"
-          stick-width="8"
-          padding="1"
-          stick-top="4"
-          stick-radius="0"
-          :pointable="sponsor.link !== ''"
-          :rotate="Math.random() * 4 - 2"
-        >
-          <img
-            v-if="sponsor.logo"
-            :src="'logos/' + sponsor.logo"
-          />
-          <h3 v-else>{{ sponsor.name }}</h3>
-        </sign>
+          <sign
+            v-if="sponsor.name !== 'wrap'"
+            class="sponsor" stick-height="150" stick-width="8"
+            padding="1" stick-top="4" stick-radius="0"
+            :pointable="sponsor.link !== ''"
+            :rotate="Math.random() * 4 - 2"
+          >
+            <img
+              v-if="sponsor.logo"
+              :src="'logos/' + sponsor.logo"
+            />
+            <h3 v-else>{{ sponsor.name }}</h3>
+          </sign>
         </a>
       </b-col>
       <b-col cols="6" sm="auto">
         <a href="https://forms.gle/XTjS71HFzfdut4T6A" class="sign-link">
-        <sign
-          class="sponsor yours" stick-height="150" stick-width="8"
-          padding="1" stick-top="4" stick-radius="0"
-          pointable :rotate="Math.random() * 4 - 2"
-        >
-          <h3>Votre panneau ici</h3>
-        </sign>
+          <sign
+            class="sponsor yours" stick-height="150" stick-width="8"
+            padding="1" stick-top="4" stick-radius="0"
+            pointable :rotate="Math.random() * 4 - 2"
+          >
+            <h3>Votre panneau ici</h3>
+          </sign>
         </a>
       </b-col>
     </b-row>
