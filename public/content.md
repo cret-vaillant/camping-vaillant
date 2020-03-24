@@ -68,7 +68,7 @@ Si toutefois vous vouliez soutenir la Fête, votre don est le bienvenu. Utilisez
 
 ## Camping
 
-Que serait la fête du camping, sans camping ? Impensable, bien sûr. Ceux qui souhaiteraient camper au Crêt-Vaillant les nuits de vendredi à dimanche pourront poser leur tente dans un jardin de la rue. Il suffit de nous contacter, le camping est gratuit.
+Que serait la fête du camping, sans camping ? Impensable, bien sûr. Ceux qui souhaiteraient camper au Crêt-Vaillant les nuits de vendredi à dimanche pourront poser leur tente dans un jardin de la rue. Il suffit de nous contacter pour qu'on s'organise.
 
 ## Contact
 
