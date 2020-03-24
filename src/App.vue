@@ -25,6 +25,15 @@ import CvMenu from "@/components/Menu"
 export default {
   components: {
     CvHeader, Sponsors, CvMenu
+  },
+  mounted() {
+    this.$el.addEventListener("click", event => {
+      let a = event.target.closest("a")
+      if (a && !a.matches(".internal")) {
+        event.preventDefault()
+        window.open(a.href, "_blank")
+      }
+    })
   }
 }
 </script>

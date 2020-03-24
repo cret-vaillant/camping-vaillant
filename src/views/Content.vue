@@ -15,7 +15,6 @@ export default {
     html() {
       return this.$root.sections.length ? this.section.html : "Chargement..."
     }
-  },
-  updated(){ this.$root.updateLinkHandlers("main") }
+  }
 }
 </script>

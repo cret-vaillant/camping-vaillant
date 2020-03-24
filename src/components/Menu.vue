@@ -32,8 +32,7 @@
 import Sign from "@/components/Sign"
 import SocialLink from "@/components/SocialLink"
 export default {
-  components: { Sign, SocialLink },
-  updated(){ this.$root.updateLinkHandlers(".menu") }
+  components: { Sign, SocialLink }
 }
 </script>
 
