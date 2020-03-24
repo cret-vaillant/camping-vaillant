@@ -68,8 +68,18 @@ new Vue({
           })
       })
     },
+    clickLinkHandler(event) {
+      let a = event.target.closest("a")
+      if (!a.matches(".internal")) {
+        event.preventDefault()
+        window.open(a.href, "_blank")
+      }
+    },
     updateLinkHandlers(selector) {
-      console.log("Update handler for links contained in " + selector)
+      document.querySelector(selector).querySelectorAll("a").forEach(a => {
+        a.removeEventListener("click", this.clickLinkHandler)
+        a.addEventListener("click", this.clickLinkHandler)
+      })
     }
   }
 }).$mount('#app')

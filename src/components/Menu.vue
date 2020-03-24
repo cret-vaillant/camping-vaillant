@@ -15,7 +15,7 @@
           :key="section.name"
         >
           <router-link
-            :to="section.name" class="sign-link"
+            :to="section.name" class="sign-link internal"
             :class="$route.path === '/' && i === 0 ? 'router-link-active' : ''"
           >
             <sign pointable stick-width="6" stick-top="0">
