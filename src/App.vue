@@ -32,7 +32,9 @@ export default {
       let a = event.target.closest("a")
       if (a && !a.matches(".internal")) {
         event.preventDefault()
-        let url = "https://cret-vaillant.ch/php/redirect.php?to=" + a.href
+        let url = process.env.NODE_ENV === "development" ?
+          a.href :
+          "https://cret-vaillant.ch/php/redirect.php?to=" + a.href
         window.open(url, "_blank")
       }
     })
