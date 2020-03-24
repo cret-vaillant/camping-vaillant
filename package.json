@@ -11,6 +11,7 @@
     "axios": "^0.19.2",
     "bootstrap-vue": "^2.7.0",
     "core-js": "^3.6.4",
+    "element-closest-polyfill": "^1.0.0",
     "lodash": "^4.17.15",
     "marked": "^0.8.0",
     "vue": "^2.6.11",

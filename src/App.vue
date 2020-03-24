@@ -21,6 +21,7 @@
 import CvHeader from "@/components/Header"
 import Sponsors from "@/components/Sponsors"
 import CvMenu from "@/components/Menu"
+import "element-closest-polyfill"
 
 export default {
   components: {
