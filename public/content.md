@@ -40,7 +40,7 @@ Samedi [ELECTRO] :
 * Size (Le Locle)
 ([extrait](https://cutt.ly/Xta1NbY))
 * Francis Musique (Le Locle)
-([extrait](https://cutt.ly/Gta1ZwO))
+([site](https://cutt.ly/Gta1ZwO))
 
 ## Spectacles et animations
 
