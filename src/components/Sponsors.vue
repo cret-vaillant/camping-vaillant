@@ -13,7 +13,7 @@
         sm="auto"
         :class="sponsor.name === 'wrap' ? 'w-100' : 'col-6'"
       >
-        <a :href="sponsor.link" class="sign-link">
+        <a :href="sponsor.link" class="sign-link" :class="sponsor.easter">
           <sign
             v-if="sponsor.name !== 'wrap'"
             class="sponsor" stick-height="150" stick-width="8"
@@ -27,6 +27,7 @@
             />
             <h3 v-else>{{ sponsor.name }}</h3>
           </sign>
+          <img v-if="sponsor.easter === 'egg'" src="favicon.png" class="dom"/>
         </a>
       </b-col>
       <b-col cols="6" sm="auto">
@@ -72,6 +73,21 @@ export default {
     &.yours .panel{
       color: white;
       background-color: #e91e63;
+    }
+  }
+  .egg .sign {
+    z-index: 1;
+  }
+  .dom {
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    transform: rotate(-20deg);
+    transition: all 0.5s;
+    &.discovered {
+      top: -80px;
+      height: 120px;
+      transform: rotate(10deg);
     }
   }
 }
