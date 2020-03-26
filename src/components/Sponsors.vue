@@ -20,6 +20,7 @@
             padding="1" stick-top="4" stick-radius="0"
             :pointable="sponsor.link !== ''"
             :rotate="Math.random() * 4 - 2"
+            :style="{zIndex: 10*i}"
           >
             <img
               v-if="sponsor.logo"
@@ -27,7 +28,11 @@
             />
             <h3 v-else>{{ sponsor.name }}</h3>
           </sign>
-          <img v-if="sponsor.easter === 'egg'" src="favicon.png" class="dom"/>
+          <img
+            v-if="sponsor.easter === 'egg'"
+            src="favicon.png" class="dom"
+            :style="{zIndex: 10*i-1}"
+          />
         </a>
       </b-col>
       <b-col cols="6" sm="auto">
@@ -75,13 +80,10 @@ export default {
       background-color: #e91e63;
     }
   }
-  .egg .sign {
-    z-index: 1;
-  }
   .dom {
     height: 60px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     transform: rotate(-20deg);
     transition: all 0.5s;
     &.discovered {
