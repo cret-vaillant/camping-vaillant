@@ -41,6 +41,7 @@
             class="sponsor yours" stick-height="150" stick-width="8"
             padding="1" stick-top="4" stick-radius="0"
             pointable :rotate="Math.random() * 4 - 2"
+            style="z-index: 10000"
           >
             <h3>Votre panneau ici</h3>
           </sign>
