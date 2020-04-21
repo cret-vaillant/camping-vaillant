@@ -44,11 +44,11 @@ Samedi [ELECTRO] :
 
 ## Spectacles et animations
 
-Infos à venir
+Infos à venir.
 
 ## Tournois
 
-Infos à venir
+Infos à venir.
 
 <!-- section Infos -->
 
@@ -72,4 +72,4 @@ Que serait la fête du camping, sans camping ? Impensable, bien sûr. Ceux qui s
 
 ## Contact
 
-Pour toute autre information, merci de nous contacter par e-mail, à [camping@cret-vaillant.ch](mailto:camping@cret-vaillant.ch)
+Pour toute autre information, merci de nous contacter par e-mail, à [camping@cret-vaillant.ch](mailto:camping@cret-vaillant.ch).
