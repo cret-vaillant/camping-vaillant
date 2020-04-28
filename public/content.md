@@ -2,7 +2,7 @@
 
 ## <span style="color:red">La Fête est reportée&nbsp;!</span>
 
-Restez au jus via nos page [Instagram](https://instagram.com/la_fete_du_cret_vaillant/) et [Facebook](https://www.facebook.com/lafeteducretvaillant).
+Restez au jus via nos pages [Instagram](https://instagram.com/la_fete_du_cret_vaillant/) et [Facebook](https://www.facebook.com/lafeteducretvaillant).
 
 # Bienvenue au Camping Vaillant&nbsp;!
 
