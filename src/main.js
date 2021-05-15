@@ -4,12 +4,13 @@ import router from './router'
 import { get } from 'axios'
 import { lexer, parser } from 'marked/lib/marked'
 import { last, zipObject } from 'lodash'
-import { LayoutPlugin } from 'bootstrap-vue'
-Vue.use(LayoutPlugin)
+import { BootstrapVue } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-Vue.config.productionTip = false
+Vue.use(BootstrapVue, {
+  breakpoints: [`xs`, 'sm', 'md']
+})
 
 new Vue({
   router,

@@ -5,8 +5,6 @@
         offset="0" cols="10"
         offset-sm="1" sm="8"
         offset-md="1" md="6"
-        offset-lg="2" lg="5"
-        offset-xl="3" xl="4"
       >
         <sign 
           class="sign-1" 
@@ -24,8 +22,6 @@
         offset="4" cols="7"
         offset-sm="4" sm="6"
         offset-md="6" md="5"
-        offset-lg="6" lg="4"
-        offset-xl="6" xl="3"
       >
         <sign
           class="sign-2"
@@ -47,7 +43,6 @@
         offset="1" cols="10"
         offset-sm="2" sm="8"
         offset-md="3" md="6"
-        offset-lg="4" lg="4"
       >
         <sign
           class="sign-3"

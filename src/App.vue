@@ -2,7 +2,7 @@
   <div id="app">
     <div class="sky">
       <div class="content pt-5">
-        <b-container>
+        <b-container style="max-width:720px">
           <cv-header/>
           <cv-menu/>
           <main class="p-3">
