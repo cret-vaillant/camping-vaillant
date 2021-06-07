@@ -28,11 +28,13 @@
             />
             <h3 v-else>{{ sponsor.name }}</h3>
           </sign>
-          <img
-            v-if="sponsor.easter === 'egg'"
-            src="favicon.png" class="dom"
-            :style="{zIndex: 10*i-1}"
-          />
+          <a href="https://cret-vaillant.ch/domathome">
+            <img
+              v-if="sponsor.easter === 'egg'"
+              src="favicon.png" class="dom"
+              :style="{zIndex: 10*i-1}"
+            />
+          </a>
         </a>
       </b-col>
       <b-col cols="6" sm="auto">
