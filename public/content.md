@@ -6,13 +6,15 @@ Restez au jus via nos pages [Instagram](https://instagram.com/la_fete_du_cret_va
 
 # Bienvenue au Camping Vaillant&nbsp;!
 
-<span style="text-decoration:line-through">Le vendredi 19 et le samedi 20 juin 2020</span>, les habitants du Crêt-Vaillant vous accueillent pour la 11<sup>ème</sup> édition de leur traditionnelle fête de quartier. La rue se mue en camping pour l'occasion: pétanque, pastis, hamac, ping-pong au rendez-vous&nbsp;!
+<span style="text-decoration:line-through">Le vendredi 18 et le samedi 19 juin 2021</span>, les habitants du Crêt-Vaillant vous accueillent pour la 11<sup>ème</sup> édition de leur traditionnelle fête de quartier. La rue se mue en camping pour l'occasion: pétanque, pastis, hamac, ping-pong au rendez-vous&nbsp;!
 
 ## Qu'est-ce que c'est&nbsp;?
 
-La Fête du Crêt-Vaillant, c'est un événement mythique au Locle. D'après les archives, les premières éditions (1977, 80 et 83) ont amenés dans la rue du Crêt-Vaillant plus de dix mille personnes&nbsp;! Depuis, une tradition s'est installé pour organiser une fête tous les 3, 4 ou 5 ans, à chaque fois sur un thème différent.
+La Fête du Crêt-Vaillant est un événement mythique au Locle. D'après les archives, les premières éditions (1977, 80 et 83) ont amené dans la rue du Crêt-Vaillant plus de dix mille personnes&nbsp;! Depuis, une tradition s'est installée pour organiser une fête tous les 3, 4 ou 5 ans, à chaque fois sur un thème différent.
 
-En 2017, "les jeunes" de la rue ont relancé le concept plus ou moins oublié avec une <a href="https://cret-vaillant.ch/3017" target="_blank">fête futuriste</a>. Une belle édition pour une première, malgré la météo capricieuse. En 2019, ce même comité relance un projet de fête pour 2020.
+En 2017, ce sont les jeunes de la rue qui reprennent le flambeau de la fête sur un concept futuriste: <a href="https://cret-vaillant.ch/3017" target="_blank">Crêt-Vaillant 3017</a>. Une belle édition pour une première, malgré la météo capricieuse. En 2019, ce même comité relance un projet de fête pour 2020, puis 2021.
+
+En bref, la fête du Crêt-Vaillant, c'est un week-end où la rue historique laisse place aux stands tenus par les habitants, aux concerts d'artistes locaux, aux animations pour enfants, aux jeux, à la bonne humeur. C'est une fête populaire, ouverte à tout le monde et entièrement gratuite.
 
 <!-- section Programme -->
 
