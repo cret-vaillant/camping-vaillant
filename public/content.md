@@ -1,5 +1,13 @@
 <!-- section Bienvenue -->
 
+<a href="/domathome" class="card-link">
+  <img style="max-width:30%" src="domathome76.png" alt="Dom at Home">
+  <div style="font-style: italic; line-height: 1; padding-left:8px">
+    <small style="color: #555">Cliquez ici pour jouer au jeu-vidéo officiel du Camping Vaillant</small>
+    <h3 style="margin:0">#DomAtHome</h3>
+  </div>
+</a>
+
 ## <span style="color:red">La Fête est reportée&nbsp;!</span>
 
 Restez au jus via nos pages [Instagram](https://instagram.com/la_fete_du_cret_vaillant/) et [Facebook](https://www.facebook.com/lafeteducretvaillant).
