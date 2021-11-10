@@ -38,16 +38,27 @@
         </a>
       </b-col>
       <b-col cols="6" sm="auto">
-        <a href="https://forms.gle/XTjS71HFzfdut4T6A" class="sign-link">
-          <sign
-            class="sponsor yours" stick-height="150" stick-width="8"
-            padding="1" stick-top="4" stick-radius="0"
-            pointable :rotate="Math.random() * 4 - 2"
-            style="z-index: 10000"
-          >
-            <h3>Votre panneau ici</h3>
-          </sign>
-        </a>
+        <sign
+          @click="openDonationModal"
+          class="sponsor yours" stick-height="150" stick-width="8"
+          padding="1" stick-top="4" stick-radius="0"
+          pointable :rotate="Math.random() * 4 - 2"
+          style="z-index: 1000"
+        >
+          <h3>Votre panneau ici</h3>
+        </sign>
+        <b-modal
+          ref="donationModal"
+          title="Contribution à la Fête du Crêt-Vaillant"
+          hide-footer scrollable
+          size="lg"
+        >
+          <div class="d-block text-center">
+            Nous vous remercions chaleureusement pour l'intérêt que vous portez à notre projet&nbsp;!<br>
+            Si vous désirez nous soutenir, vous pouvez utiliser ce formulaire de paiement pour nous faire parvenir votre don. ❤️
+          </div>
+          <div class="rnw"></div>
+        </b-modal>
       </b-col>
     </b-row>
   </b-container>
@@ -55,10 +66,20 @@
 
 <script>
 import Sign from "@/components/Sign"
+
 export default {
   components: {
     Sign
   },
+
+  methods: {
+    openDonationModal() {
+      window.rnw.tamaro.runWidget('.rnw', {
+        language: 'fr'
+      })
+      this.$refs.donationModal.show()
+    }
+  }
 }
 </script>
 
