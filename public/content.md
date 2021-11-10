@@ -68,7 +68,7 @@ Infos à venir.
 
 L'entrée est gratuite.
 
-Si toutefois vous vouliez soutenir la Fête, votre don est le bienvenu. Utilisez [ce formulaire](https://docs.google.com/forms/d/e/1FAIpQLSe4tFR4FSNWAo4sEBSwgqv_8qvTBM7AwCf9cJ-Oy4Qx58fX1Q/viewform) pour plus d'informations.
+Si toutefois vous vouliez soutenir la Fête, votre don est le bienvenu. Utilisez le formulaire caché derrière le panneau rose tout en bas de cette page.
 
 ## Accès
 
