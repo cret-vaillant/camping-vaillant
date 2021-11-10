@@ -5,6 +5,13 @@
 npm install
 ```
 
+### Adapt configuration
+```
+cp .env .env.local
+```
+
+Adapt `BASE_URL` and `VUE_APP_GOOGLE_API_KEY`
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
