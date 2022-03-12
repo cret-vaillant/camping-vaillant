@@ -20,3 +20,9 @@ export default {
   components: { Post, Product }
 }
 </script>
+
+<style scoped>
+article {
+  margin-bottom: 40px;
+}
+</style>
