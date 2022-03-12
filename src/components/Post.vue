@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ title.rendered }}</h2>
+    <h2 v-html="title.rendered"></h2>
   </div>
 </template>
 
