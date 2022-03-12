@@ -72,11 +72,17 @@ new Vue({
     },
     setPosts(posts) {
       this.posts = posts.map(p => ({ ...p, _type: 'post' }))
+      localStorage.posts = JSON.stringify(this.posts)
     },
     setProducts(products) {
       this.products = products.map(p => ({ ...p, _type: 'product' }))
+      localStorage.products = JSON.stringify(this.products)
     },
     fetchData() {
+      if (localStorage.posts) {
+        this.setPosts(JSON.parse(localStorage.posts))
+        this.setProducts(JSON.parse(localStorage.products))
+      }
       api('wp/v2/posts?_embed').then(this.setPosts)
       api('wc/v3/products').then(this.setProducts)
     }
