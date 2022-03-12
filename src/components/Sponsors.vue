@@ -88,6 +88,10 @@ export default {
   background-color: #115f52;
   text-align: center;
   padding-bottom: 120px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   h1{
     font-style: italic;
     font-weight: bold;
