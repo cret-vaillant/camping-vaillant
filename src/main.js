@@ -11,12 +11,6 @@ Vue.use(BootstrapVue, {
   breakpoints: [`xs`, 'sm', 'md']
 })
 
-console.log({
-  VUE_APP_API_USERNAME: process.env.VUE_APP_API_USERNAME,
-  VUE_APP_API_PASSWORD: process.env.VUE_APP_API_PASSWORD,
-  VUE_APP_API_BASE: process.env.VUE_APP_API_BASE
-})
-
 let username = process.env.VUE_APP_API_USERNAME
 let password = process.env.VUE_APP_API_PASSWORD
 
