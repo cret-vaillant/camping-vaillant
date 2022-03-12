@@ -11,6 +11,6 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: purple;
+  background-image: linear-gradient(red, blue);
 }
 </style>

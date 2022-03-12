@@ -50,18 +50,18 @@ export default {
   color: #222222;
 
   .content {
-    height: 100vh;
-    width: 100vw;
     display: flex;
-    box-shadow: #222222;
 
     main {
       width: 40%;
-      overflow: auto;
+      padding: 20px;
     }
 
     header {
       width: 60%;
+      height: 100vh;
+      position: sticky;
+      top: 0;
     }
   }
 }
