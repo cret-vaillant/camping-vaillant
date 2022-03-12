@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div class="content">
+      <cover/>
       <main>
         <router-view/>
       </main>
-      <cover/>
     </div>
     <footer>
       <sponsors/>
@@ -51,17 +51,33 @@ export default {
 
   .content {
     display: flex;
+    flex-direction: column;
 
     main {
-      width: 40%;
       padding: 20px;
     }
 
     header {
-      width: 60%;
-      height: 100vh;
-      position: sticky;
-      top: 0;
+      aspect-ratio: 1;
+      max-height: 80vh;
+      min-width: 100vw;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      flex-direction: row-reverse;
+
+      main {
+        width: 40%;
+      }
+
+      header {
+        width: 60%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        max-height: none;
+        min-width: auto;
+      }
     }
   }
 }
