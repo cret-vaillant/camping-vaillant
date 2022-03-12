@@ -1,14 +1,10 @@
 <template>
   <div id="app">
-    <div class="sky">
-      <div class="content pt-5">
-        <b-container style="max-width:720px">
-          <cv-header/>
-          <main class="p-3">
-            <router-view/>
-          </main>
-        </b-container>
-      </div>
+    <div class="content">
+      <main>
+        <router-view/>
+      </main>
+      <cover/>
     </div>
     <footer>
       <sponsors/>
@@ -17,13 +13,13 @@
 </template>
 
 <script>
-import CvHeader from "@/components/Header"
+import Cover from "@/components/Cover"
 import Sponsors from "@/components/Sponsors"
 import "element-closest-polyfill"
 
 export default {
   components: {
-    CvHeader, Sponsors
+    Cover, Sponsors
   },
   mounted() {
     this.$el.addEventListener("click", event => {
@@ -52,28 +48,21 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #222222;
-  div.sky {
-    background-color: #84b4f5;
-    background-image: linear-gradient(5deg,#bbd5fb 0%, #84b4f5 100%);
-  }
-  div.content {
-    background-image: url("background.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    padding-bottom: 20vh;
-    header {
-      margin-bottom: 6rem;
-    }
+
+  .content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    box-shadow: #222222;
+
     main {
-      background-color: white;
-      position: relative;
-      min-height: 400px;
+      width: 40%;
+      overflow: auto;
     }
-  }
-  > footer {
-    background: #53b45a;
-    padding-bottom: 100px;
+
+    header {
+      width: 60%;
+    }
   }
 }
 </style>
