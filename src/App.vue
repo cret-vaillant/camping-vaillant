@@ -4,7 +4,6 @@
       <div class="content pt-5">
         <b-container style="max-width:720px">
           <cv-header/>
-          <cv-menu/>
           <main class="p-3">
             <router-view/>
           </main>
@@ -20,12 +19,11 @@
 <script>
 import CvHeader from "@/components/Header"
 import Sponsors from "@/components/Sponsors"
-import CvMenu from "@/components/Menu"
 import "element-closest-polyfill"
 
 export default {
   components: {
-    CvHeader, Sponsors, CvMenu
+    CvHeader, Sponsors
   },
   mounted() {
     this.$el.addEventListener("click", event => {
