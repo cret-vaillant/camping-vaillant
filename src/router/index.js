@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Content from '../views/Content.vue'
+import Index from '../views/Index.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/:sectionName?',
-    name: 'Content',
-    component: Content,
-    props: true
+    path: '/',
+    name: 'Index',
+    component: Index
   }
 ]
 

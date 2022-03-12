@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { get } from 'axios'
-import { zipObject } from 'lodash'
+import { orderBy, zipObject } from 'lodash'
 import { BootstrapVue } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -11,17 +11,51 @@ Vue.use(BootstrapVue, {
   breakpoints: [`xs`, 'sm', 'md']
 })
 
+console.log({
+  VUE_APP_API_USERNAME: process.env.VUE_APP_API_USERNAME,
+  VUE_APP_API_PASSWORD: process.env.VUE_APP_API_PASSWORD,
+  VUE_APP_API_BASE: process.env.VUE_APP_API_BASE
+})
+
+let username = process.env.VUE_APP_API_USERNAME
+let password = process.env.VUE_APP_API_PASSWORD
+
+let headers = new Headers({
+  Authorization: 'Basic ' + btoa(`${username}:${password}`)
+})
+
+function api(uri){
+  let url = `${process.env.VUE_APP_API_BASE}/${uri}`
+  return fetch(url, { headers }).then(r => r.json())
+}
+
 new Vue({
   router,
+
   render: h => h(App),
+
   data: {
-    sections: [],
+    posts: [],
+    products: [],
     sponsors: [],
     sponsorHeader: ""
   },
+
+  computed: {
+    items() {
+      return orderBy(
+        [...this.posts, ...this.products],
+        item => item.date ?? item.date_created,
+        ['desc']
+      )
+    }
+  },
+
   created(){
+    this.fetchData()
     this.fetchSponsors()
   },
+
   methods: {
     fetchSponsors(){
       let url =
@@ -41,6 +75,16 @@ new Vue({
             }
           })
       })
+    },
+    setPosts(posts) {
+      this.posts = posts.map(p => ({ ...p, _type: 'post' }))
+    },
+    setProducts(products) {
+      this.products = products.map(p => ({ ...p, _type: 'product' }))
+    },
+    fetchData() {
+      api('wp/v2/posts?_embed').then(this.setPosts)
+      api('wc/v3/products').then(this.setProducts)
     }
   }
 }).$mount('#app')
