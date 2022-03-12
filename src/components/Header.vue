@@ -31,9 +31,7 @@
           stick-height="600"
           stick-top="0"
         >
-          <div style="position: absolute;height: 18px;width: 160px;transform: rotate(35deg);top: 45%;left: calc(50% - 80px);background: rgb(246, 217, 2);"/>
-          <div style="position: absolute;height: 18px;width: 170px;transform: rotate(-40deg);top: 45%;left: calc(50% - 80px);background: rgb(246, 217, 2);"/>
-          <h2>19&nbsp;<small>&</small>&nbsp;20 JUIN 2020</h2>
+          <h2>17&nbsp;<small>&</small>&nbsp;18 JUIN 2022</h2>
           <h3>Le Locle</h3>
         </sign>
       </b-col>
