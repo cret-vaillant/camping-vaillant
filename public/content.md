@@ -24,8 +24,6 @@ En 2017, ce sont les jeunes de la rue qui reprennent le flambeau de la fête sur
 
 En bref, la fête du Crêt-Vaillant, c'est un week-end où la rue historique laisse place aux stands tenus par les habitants, aux concerts d'artistes locaux, aux animations pour enfants, aux jeux, à la bonne humeur. C'est une fête populaire, ouverte à tout le monde et entièrement gratuite.
 
-<!-- section Programme -->
-
 # Programme
 
 ## Concerts
@@ -59,8 +57,6 @@ Infos à venir.
 ## Tournois
 
 Infos à venir.
-
-<!-- section Infos -->
 
 # Infos pratiques
 
