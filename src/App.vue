@@ -54,13 +54,15 @@ export default {
     flex-direction: column;
 
     main {
-      padding: 20px;
+      padding: 40px;
     }
 
     header {
       aspect-ratio: 1;
       max-height: 80vh;
       min-width: 100vw;
+      height: 100vw;
+      box-shadow: #0000008a 0px 0px 10px 0px;
     }
 
     @media only screen and (min-width: 1200px) {
@@ -79,6 +81,11 @@ export default {
         min-width: auto;
       }
     }
+  }
+
+  footer {
+    box-shadow: 0 0 10px #0000008a;
+    position: absolute;
   }
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <header>
-    cover
   </header>
 </template>
 
@@ -11,6 +10,8 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-image: linear-gradient(red, blue);
+  background-image: url(/site-cover.jpg);
+  background-size: cover;
+  background-position: center;
 }
 </style>

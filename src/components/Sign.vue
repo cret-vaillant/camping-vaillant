@@ -63,7 +63,7 @@ export default {
     }
   }
   .stick{
-    background-color: #625642;
+    background-color: #8c4936;
     position: absolute;
   }
   &.sign-shadow > *{

@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="pt-3 pb-4 sponsors">
+  <b-container fluid class="pt-5 sponsors">
     <h1 class="mb-4">{{ $root.sponsorHeader }}</h1>
     <b-row
       class="sponsor-grid"
@@ -85,10 +85,13 @@ export default {
 
 <style lang="scss">
 .sponsors{
+  background-color: #115f52;
   text-align: center;
+  padding-bottom: 120px;
   h1{
     font-style: italic;
     font-weight: bold;
+    color: white;
   }
   .sponsor {
     max-width: 200px;
