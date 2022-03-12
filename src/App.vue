@@ -55,6 +55,10 @@ export default {
 
     main {
       padding: 40px;
+      > div {
+        max-width: 800px;
+        margin: auto;
+      }
     }
 
     header {
