@@ -56,7 +56,7 @@ export default {
     main {
       padding: 40px;
       > div {
-        max-width: 800px;
+        max-width: 600px;
         margin: auto;
       }
     }
@@ -69,7 +69,7 @@ export default {
       box-shadow: #0000008a 0px 0px 10px 0px;
     }
 
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1000px) {
       flex-direction: row-reverse;
 
       main {
