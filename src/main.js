@@ -32,7 +32,8 @@ new Vue({
     posts: [],
     products: [],
     sponsors: [],
-    sponsorHeader: ""
+    sponsorHeader: "",
+    loading: false
   },
 
   computed: {
@@ -79,12 +80,15 @@ new Vue({
       localStorage.products = JSON.stringify(this.products)
     },
     fetchData() {
+      this.loading = true
       if (localStorage.posts) {
         this.setPosts(JSON.parse(localStorage.posts))
         this.setProducts(JSON.parse(localStorage.products))
       }
-      api('wp/v2/posts?_embed').then(this.setPosts)
-      api('wc/v3/products').then(this.setProducts)
+      return Promise.all([
+        api('wp/v2/posts?_embed').then(this.setPosts),
+        api('wc/v3/products').then(this.setProducts)
+      ]).finally(() => (this.loading = false))
     }
   }
 }).$mount('#app')
