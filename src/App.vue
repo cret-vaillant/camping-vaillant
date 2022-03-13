@@ -69,7 +69,7 @@ export default {
       box-shadow: #0000008a 0px 0px 10px 0px;
     }
 
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: 1200px) {
       flex-direction: row-reverse;
 
       main {
