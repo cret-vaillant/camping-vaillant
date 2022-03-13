@@ -90,6 +90,7 @@ export default {
   footer {
     box-shadow: 0 0 10px #0000008a;
     position: absolute;
+    width: 100%;
   }
 }
 </style>
