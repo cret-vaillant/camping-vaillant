@@ -43,7 +43,7 @@ export default {
     stickHeight: { default: 400 },
     padding: { default: 1 },
     stickTop: { default: -20 },
-    stickRadius: { default: 5 },
+    stickRadius: { default: 0 },
     shadow: { default: true },
     pointable: Boolean
   }
