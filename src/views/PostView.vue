@@ -1,6 +1,6 @@
 <template>
   <div>
-    <post v-if="item" :item="item"/>
+    <post v-if="post" :post="post"/>
     <div v-else-if="$root.loading">Chargement...</div>
     <div v-else>404: pas trouvé, déso... 🦆</div>
   </div>
@@ -15,8 +15,8 @@ export default {
   components: { Post },
 
   computed: {
-    item() {
-      return this.$root.items.find(i => i.slug === this.slug)
+    post() {
+      return this.$root.posts.find(p => p.slug === this.slug)
     }
   }
 }

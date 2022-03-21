@@ -26,7 +26,7 @@
     <div v-if="$root.posts.length === 0">
       Chargement...
     </div>
-    <post
+    <post-excerpt
       v-for="post in $root.posts"
       :key="post.id"
       :post="post"
@@ -37,10 +37,10 @@
 <script>
 import { atcb_init } from 'add-to-calendar-button'
 import 'add-to-calendar-button/assets/css/atcb.min.css'
-import Post from '@/components/Post'
+import PostExcerpt from '@/components/PostExcerpt'
 
 export default {
-  components: { Post },
+  components: { PostExcerpt },
 
   mounted: atcb_init
 }
