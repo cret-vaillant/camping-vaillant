@@ -25,10 +25,7 @@ const router = new VueRouter({
   routes,
   scrollBehavior (to, from, savedPosition) {
     if (to.name === 'Index') return savedPosition
-    return {
-      selector: 'main',
-      offset: { y: 200 }
-    }
+    return { x: 0, y: 0 }
   }
 })
 
