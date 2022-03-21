@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { get } from 'axios'
-import { orderBy, zipObject } from 'lodash'
+import { zipObject } from 'lodash'
 import { BootstrapVue } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -23,20 +23,9 @@ new Vue({
 
   data: {
     posts: [],
-    products: [],
     sponsors: [],
     sponsorHeader: "",
     loading: false
-  },
-
-  computed: {
-    items() {
-      return orderBy(
-        [...this.posts, ...this.products],
-        item => item.date ?? item.date_created,
-        ['desc']
-      )
-    }
   },
 
   created(){
@@ -65,7 +54,7 @@ new Vue({
       })
     },
     setPosts(posts) {
-      this.posts = posts.map(p => ({ ...p, _type: 'post' }))
+      this.posts = posts
       localStorage.posts = JSON.stringify(this.posts)
     },
     fetchData() {

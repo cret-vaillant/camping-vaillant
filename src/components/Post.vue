@@ -1,32 +1,17 @@
 <template>
   <div class="post">
-    <h3 v-html="title"></h3>
+    <h3 v-html="post.title.rendered"></h3>
     <div
       class="excerpt"
-      :class="sticky ? 'sticky' : ''"
-      v-html="excerpt"
+      :class="post.sticky ? 'sticky' : ''"
+      v-html="post.excerpt.rendered"
     ></div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['item'],
-
-  computed: {
-    isPost() {
-      return this.item._type === 'post'
-    },
-    title() {
-      return this.isPost ? this.item.title.rendered : this.item.name
-    },
-    excerpt() {
-      return this.isPost ? this.item.excerpt.rendered : this.item.description
-    },
-    sticky() {
-      return this.isPost ? this.item.sticky : this.item.featured
-    }
-  }
+  props: ['post'],
 }
 </script>
 

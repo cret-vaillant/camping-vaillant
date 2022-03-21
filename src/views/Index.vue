@@ -23,13 +23,13 @@
         }
       </div>
     </div>
-    <div v-if="$root.items.length === 0">
+    <div v-if="$root.posts.length === 0">
       Chargement...
     </div>
     <post
-      v-for="item in $root.items"
-      :key="item.id"
-      :item="item"
+      v-for="post in $root.posts"
+      :key="post.id"
+      :post="post"
     />
   </div>
 </template>
