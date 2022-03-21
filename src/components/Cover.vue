@@ -1,6 +1,7 @@
 <template>
   <header>
     <div class="social">
+      <h5>Suivez-nous:</h5>
       <sign pointable stick-width="7" stick-top="-5" rotate="-2" padding="2">
         <social-link url="facebook.com/lafeteducretvaillant" title="Vers notre page Facebook"/>
       </sign>
@@ -28,12 +29,21 @@ header {
   position: relative;
   overflow: hidden;
 
+  h5 {
+    font-size: min(4vw, 1.2rem);
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    margin-top: 12px;
+    margin-right: 6px;
+  }
+
   .social {
     width: 33.3%;
     height: 80px;
     position: absolute;
     bottom: 0;
-    left: 17%;
+    left: 10%;
     display: flex;
     justify-content: space-evenly;
 
