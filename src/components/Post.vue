@@ -15,5 +15,8 @@ export default {
 <style lang="scss">
 .post {
   padding: 40px 0;
+  >div {
+    font-size: 1.1rem;
+  }
 }
 </style>
