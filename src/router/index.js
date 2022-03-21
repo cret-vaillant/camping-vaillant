@@ -22,7 +22,14 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    if (to.name === 'Index') return savedPosition
+    return {
+      selector: 'main',
+      offset: { y: 200 }
+    }
+  }
 })
 
 export default router
