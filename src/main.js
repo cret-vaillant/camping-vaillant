@@ -11,16 +11,9 @@ Vue.use(BootstrapVue, {
   breakpoints: [`xs`, 'sm', 'md']
 })
 
-let username = process.env.VUE_APP_API_USERNAME
-let password = process.env.VUE_APP_API_PASSWORD
-
-let headers = new Headers({
-  Authorization: 'Basic ' + btoa(`${username}:${password}`)
-})
-
 function api(uri){
   let url = `${process.env.VUE_APP_API_BASE}/${uri}`
-  return fetch(url, { headers }).then(r => r.json())
+  return fetch(url).then(r => r.json())
 }
 
 new Vue({
@@ -75,20 +68,14 @@ new Vue({
       this.posts = posts.map(p => ({ ...p, _type: 'post' }))
       localStorage.posts = JSON.stringify(this.posts)
     },
-    setProducts(products) {
-      this.products = products.map(p => ({ ...p, _type: 'product' }))
-      localStorage.products = JSON.stringify(this.products)
-    },
     fetchData() {
       this.loading = true
       if (localStorage.posts) {
         this.setPosts(JSON.parse(localStorage.posts))
-        this.setProducts(JSON.parse(localStorage.products))
       }
-      return Promise.all([
-        api('wp/v2/posts?_embed').then(this.setPosts),
-        api('wc/v3/products').then(this.setProducts)
-      ]).finally(() => (this.loading = false))
+      return api('wp/v2/posts?_embed')
+        .then(this.setPosts)
+        .finally(() => (this.loading = false))
     }
   }
 }).$mount('#app')
