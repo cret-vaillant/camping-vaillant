@@ -1,6 +1,10 @@
 <template>
-  <header>
-    <div class="social">
+  <header
+    :style="{
+      backgroundImage: `url(${$root.coverImage})`
+    }"
+  >
+    <div class="social" v-if="!$root.customCover">
       <h5>Suivez-nous:</h5>
       <sign pointable stick-width="7" stick-top="-5" rotate="-2" padding="2">
         <social-link url="facebook.com/lafeteducretvaillant" title="Vers notre page Facebook"/>
@@ -23,7 +27,6 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-image: url(/site-cover.jpg);
   background-size: cover;
   background-position: center;
   position: relative;

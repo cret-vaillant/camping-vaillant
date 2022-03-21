@@ -28,6 +28,19 @@ new Vue({
     loading: false
   },
 
+  computed: {
+    post() {
+      let slug = this.$route.params.slug
+      return this.posts.find(p => p.slug === slug)
+    },
+    coverImage() {
+      return this.post?.jetpack_featured_media_url || '/site-cover.jpg'
+    },
+    customCover() {
+      return this.coverImage !== '/site-cover.jpg'
+    }
+  },
+
   created(){
     this.fetchData()
     this.fetchSponsors()
