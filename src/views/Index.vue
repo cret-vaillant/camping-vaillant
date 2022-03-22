@@ -30,6 +30,7 @@
       v-for="post in $root.posts"
       :key="post.id"
       :post="post"
+      :id="post.slug"
     />
   </div>
 </template>
