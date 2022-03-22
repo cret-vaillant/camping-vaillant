@@ -16,6 +16,8 @@ function api(uri){
   return fetch(url).then(r => r.json())
 }
 
+const siteCover = 'https://cret-vaillant.ch/wordpress/wp-content/uploads/2022/03/site-cover.jpg'
+
 new Vue({
   router,
 
@@ -34,10 +36,10 @@ new Vue({
       return this.posts.find(p => p.slug === slug)
     },
     coverImage() {
-      return this.post?.jetpack_featured_media_url || '/site-cover.jpg'
+      return this.post?.jetpack_featured_media_url || siteCover
     },
     customCover() {
-      return this.coverImage !== '/site-cover.jpg'
+      return this.coverImage !== siteCover
     }
   },
 
