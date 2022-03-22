@@ -1,5 +1,6 @@
 <template>
   <div class="index">
+    <h1 class="text-center mb-5">🏕</h1>
     <div class="calendar">
       <small><i>Ajoutez la fête à votre calendrier:</i></small>
       <div class="atcb" style="display:none;">
@@ -59,9 +60,6 @@ export default {
         border: 2px solid #ffffff;
       }
     }
-  }
-  .post {
-    margin-bottom: 40px;
   }
 }
 </style>

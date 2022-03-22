@@ -30,6 +30,8 @@ export default {
 
 <style lang="scss">
 .post-excerpt {
+  margin-bottom: 60px;
+
   h3 {
     font-size: 1.3rem;
     font-weight: 900;
@@ -38,10 +40,11 @@ export default {
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-    margin: 6px 0 50px 0;
+    margin-top: 6px;
     position: relative;
     background-position: center;
     background-size: cover;
+    font-size: 1.1rem;
 
     &.sticky {
       >div {
