@@ -62,7 +62,7 @@ export default {
           background-image: linear-gradient(#000a, #0002);
         }
       }
-      overflow: hidden;
+      overflow: auto;
       padding: 20px;
       height: 100%;
       line-height: 1.6;
