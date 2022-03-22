@@ -17,6 +17,7 @@ export default {
   padding: 40px 0;
   >div {
     font-size: 1.1rem;
+    line-height: 1.8;
     .has-text-align-center {
       text-align: center;
     }
