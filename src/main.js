@@ -16,7 +16,7 @@ function api(uri){
   return fetch(url).then(r => r.json())
 }
 
-const siteCover = 'https://cret-vaillant.ch/wordpress/wp-content/uploads/2022/03/site-cover.jpg'
+const siteCover = 'https://cret-vaillant.ch/boutique/wp-content/uploads/2022/03/site-cover.jpg'
 
 new Vue({
   router,
