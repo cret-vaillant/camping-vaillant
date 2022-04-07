@@ -27,13 +27,7 @@ const router = new VueRouter({
     if (to.name === 'Index' && from.name === 'Post') {
       return {
         selector: `#${from.params.slug}`,
-        offset: { y: 40 },
-        behavior: 'smooth'
-      }
-    } else if (to.name === 'Post' && from.name === 'Index') {
-      return {
-        x: 0, y: 0 ,
-        behavior: 'smooth'
+        offset: { y: 40 }
       }
     }
     return { x: 0, y: 0 } 
