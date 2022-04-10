@@ -1,6 +1,6 @@
 <template>
   <div class="post">
-    <router-link to="/" class="internal">← Retour au camping 🏕</router-link>
+    <router-link to="/">← Retour au camping 🏕</router-link>
     <h2 class="mt-3" v-html="post.title.rendered"></h2>
     <div v-html="post.content.rendered"></div>
   </div>

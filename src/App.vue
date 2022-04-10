@@ -20,22 +20,6 @@ import "element-closest-polyfill"
 export default {
   components: {
     Cover, Sponsors
-  },
-  mounted() {
-    this.$el.addEventListener("click", event => {
-      let a = event.target.closest("a")
-      if (a && !a.matches(".internal")) {
-        event.preventDefault()
-        if (a.matches(".egg")) {
-          a.querySelector(".dom").classList.toggle("discovered");
-        } else {
-          let url = process.env.NODE_ENV === "development" ?
-            a.href :
-            "https://cret-vaillant.ch/php/redirect.php?to=" + a.href
-          window.open(url, "_blank")
-        }
-      }
-    })
   }
 }
 </script>

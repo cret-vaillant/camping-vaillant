@@ -1,6 +1,6 @@
 <template>
   <div class="post-excerpt">
-    <router-link :to="post.slug" class="text-decoration-none text-reset internal">
+    <router-link :to="post.slug" class="text-decoration-none text-reset">
       <h3 v-html="post.title.rendered"></h3>
     </router-link>
     <div
@@ -15,7 +15,7 @@
         v-html="post.excerpt.rendered"
         @click="post.jetpack_featured_media_url ? $router.push(post.slug) : null"
       />
-      <b-button squared variant="light" :to="post.slug" class="internal">
+      <b-button squared variant="light" :to="post.slug">
         VOIR PLUS…
       </b-button>
     </div>
